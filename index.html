@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Det sanselige Aarhus</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/alle.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta name="author" content="VisitAarhus">
+
+    <link rel="shortcut icon" href="css/images/ekstra/visitdanmarklogo.png" />
+
+</head>
+
+<body id="overblik">
+    <header>
+        <div id="menu">
+            <nav>
+                <button id="loginknap"><img src="css/images/ekstra/profil.png" alt="bruger"></button>
+
+                <button id="hearticon">
+                    <img onclick="GoToFav()" src="css/images/ekstra/hjerteinputcheck.png" alt="hjerteikon">
+                </button>
+
+                <!-- The Modal -->
+                <div id="mapmodal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3> Opret bruger:</h3>
+                        <div id="login">
+
+                            <input type="text" placeholder="Indtast dit fornavn" class="formfelt" id="fornavn" list="navne">
+
+                            <datalist id="navne"></datalist>
+
+                            <input type="text" id="efternavn" placeholder="Indtast dit efternavn" class="formfelt">
+
+
+
+                            <input type="email" id="email" placeholder="Indtast din email" class="formfelt">
+
+                            <input type="text" placeholder="Indtast din adresse" class="formfelt" id="adresse" list="adresser">
+
+                            <datalist id="adresser"></datalist>
+
+                            <input type="text" placeholder="Indtast dit postnummer" id="postal" class="formfelt" list="postnummer">
+
+                            <datalist id="postnummer"></datalist>
+
+                        </div>
+                        <button type="button" id="logind">Log ind </button>
+                        <button type="button" id="opret">Opret bruger</button>
+                    </div>
+
+
+
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <video id="introvideo" id="spil" autoplay loop muted playsinline>
+                <source src="video/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+
+
+            <script>
+                const PIGEN = new Audio("audio/pigen.mp3");
+
+                PIGEN.play();
+
+                const PLAY = document.getElementById("introvideo");
+                PLAY.addEventListener("click",
+                    function() {
+                        if (PIGEN.paused) {
+                            PIGEN.play()
+                        } else {
+                            PIGEN.pause()
+                        }
+                    });
+
+            </script>
+
+
+
+
+            <h1>Hjerteligt velkommen <img src="css/images/ekstra/visitdanmarklogo.png" alt="logo">
+
+            </h1>
+
+            <p>Jyllands hovedstad er et sandt vandre paradis, og i modsætning til mange andre byer, kan man gå til stort set alt i Aarhus. På din tur rundt i byen vil du opleve alt fra smuk arkitektur, charmerende historiske bygninger, æstetisk kunst og flotte naturskønne parker – der er helt sikkert en grund til at kalde det smilet by, for her er rigtig meget at smile af. </p>
+
+            <p>Vi ønsker ar bane dig vejen for unikke ruter i Aarhus, der tilpasses dine oplevelses ønsker, og vi drømmer om at inspirere dig til at gå af utraditionelle veje for at vise et mere afsides og ægte Aarhus der efterlader dig med en mere sanselig oplevelse af byen.
+            </p>
+
+            <p>Vi glæder os til at byde dig indenfor i et sanseligt vandreunivers.</p>
+
+
+
+            <div id="knapper">
+                <button type="button" id="hoer">
+                    <h2>Hør</h2>
+                </button>
+                <a href="se.html"><button type="button" id="se">
+                        <h2>Se</h2>
+                    </button></a>
+
+                <a href="smag.html"><button type="button" id="smag">
+                        <h2>Smag</h2>
+                    </button></a>
+
+                <a href="maerk.html">
+                    <button type="button" id="maerk">
+                        <h2>Mærk</h2>
+                    </button>
+                </a>
+
+
+                <button type="button" id="duft">
+                    <h2>Duft</h2>
+                </button>
+            </div>
+
+
+
+            <button id="badekar"></button>
+
+            <!-- The Modal -->
+            <div id="badekarmodal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3> I samarbejde med Visit Aarhus</h3>
+                    <img src="css/images/images/visitaarhus.png" alt="Visit Aarhus">
+                </div>
+            </div>
+
+
+            <button id="qr"><img src="css/images/ekstra/qrgo2.png" alt="qrkodegoto"></button>
+
+            <!-- The Modal -->
+            <div id="qrmodal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3> Din QR-kode er ikke lavet endnu.</h3>
+                    <p>Kig lidt rundt på siden og "like" dine favoritoplevelser. Så laver vi en personlig QR-kode med dine ruter. </p>
+                    <p>Så kan du scanne koden med dit mobilkamera. Så får du din rutevejledning direkte på mobilen.</p>
+                </div>
+            </div>
+
+
+            <a href="#top" id="pilop">
+                <img src="css/images/ekstra/tothetop.png" alt="hjemknap">
+            </a>
+        </article>
+    </main>
+
+
+    <footer></footer>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>
