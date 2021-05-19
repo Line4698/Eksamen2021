@@ -18,25 +18,45 @@
     <meta name="author" content="VisitAarhus">
 
 
-    <link rel="shortcut icon" href="css/images/sejd-icon.png" />
+    <link rel="shortcut icon" href="css/images/rombe.png" />
 </head>
 
 <body>
     <header>
         <div id="menu-desk">
-            <h1 id="logo"><img src="css/images/sejd-logo.png" alt="Café Sejd, café og boutique"></h1>
+            <h1 id="logo"><img src="css/images/illustrationer/sejd-logo.png" alt="Café Sejd, café og boutique" id="logoimg"></h1>
 
             <nav>
                 <ul>
-                    <li><a href="">MENUKORT</a></li>
-                    <li><a href="">FORTÆLLINGER</a></li>
-                    <li><a href="">OM SEJD</a></li>
-                    <li><a href="">KONTAKT</a></li>
+                    <li><a id="menu-menukort" href="">MENUKORT</a></li>
+                    <li><a id="menu-fortaellinger" href="">FORTÆLLINGER</a></li>
+                    <li><a id="menu-sejd" href="">OM SEJD</a></li>
+                    <li><a id="menu-kontakt" href="">KONTAKT</a></li>
 
                 </ul>
             </nav>
-
         </div>
+
+        <aside>
+            <ul id="scroll-menu">
+                <li data-menuanchor="intro"><a href="#intro"><img src="css/images/rombe.png" alt="Information om Sejd"></a><span></span><span></span><span></span><span></span><span></span></li>
+
+                <li data-menuanchor="sectionTwo"><a href="#omcafeen">
+                        <img src="css/images/rombe.png" alt="Intro fortælling om Sejd"></a><span></span><span></span><span></span><span></span><span></span></li>
+                <li data-menuanchor="sectionThree"><a href="#kontakt">
+                        <img src="css/images/rombe.png" alt="kontaktinformation om Sejd"></a><span></span><span></span><span></span><span></span><span></span></li>
+
+                <li data-menuanchor="sectionFour"><a href="#menukort">
+                        <img src="css/images/rombe.png" alt="menukort hos Sejd"></a><span></span><span></span><span></span><span></span><span></span></li>
+
+                <li data-menuanchor="sectionFive"><a href="#sectionFive">
+                        <img src="css/images/rombe.png" alt="fortællinger fra Sejd"></a><span></span><span></span><span></span><span></span><span></span></li>
+
+                <li data-menuanchor="sectionSix"><a href="#sectionSix">
+                        <img src="css/images/rombe.png" alt="Sociale medier om Sejd"></a><span></span><span></span><span></span><span></span><span></span></li>
+
+            </ul>
+        </aside>
     </header>
     <main>
         <div id="intro">
@@ -44,17 +64,22 @@
         </div>
         <article id="wrapper">
             <section id="omcafeen">
-                <img src="css/images/sejdillu3.png" alt="illustration af sej kvinde" id="sejdleft">
-                <p>I hjertet af Jelling ligger Sejd Café &amp; Boutique. Vi inviterer indenfor til god stemning og masser af fortællinger.
-                    Her er nærvær, intimitet og høj kvalitet, både i vores serveringer og de produkter der sælges fra hylderne.
-                    Sejd er et sted for alle, hvor børn skal have lov til at være børn.
-                    Vi går op i at alle har det godt, så der er fokus på fairtrade, bæredygtighed og vi har valgt at bruge miljørigtigt service.</p>
-                <img src="css/images/sejdillu3.png" alt="illustration af sej kvinde" id="sejdright">
+                <img src="css/images/illustrationer/sejdillu3.png" alt="illustration af sej kvinde" id="sejdleft">
+                <section id="omcafeentekst">
+                    <p>I hjertet af Jelling ligger Sejd Café &amp; Boutique. Vi inviterer indenfor til god stemning og masser af fortællinger. Her er nærvær, intimitet og høj kvalitet, både i vores serveringer og de produkter der sælges fra hylderne.
+                    </p>
+                    <p>
+                        Sejd er et sted for alle, hvor børn skal have lov til at være børn.
+                    </p>
+                    <p>
+                        Vi går op i at alle har det godt, så der er fokus på fairtrade, bæredygtighed og vi har valgt at bruge miljørigtigt service.</p>
+                </section>
+                <img src="css/images/illustrationer/sejdillu3.png" alt="illustration af sej kvinde" id="sejdright">
             </section>
 
             <section id="kontakt">
                 <section id="aabningstider">
-                    <h3>Åbningstider</h3>
+                    <h3><img src="css/images/overskrifter/aabningstider.png" alt="Åbningstider" class="overskrifter"></h3>
 
                     <ul>
                         <li>onsdag - søndag</li>
@@ -67,7 +92,7 @@
                 </section>
 
                 <section id="kontaktinfo">
-                    <h3>Kontakt</h3>
+                    <h3><img src="css/images/overskrifter/kontakt.png" alt="Kontakt" class="overskrifter"></h3>
 
                     <ul>
                         <li>Gorms Torv 7a</li>
@@ -82,22 +107,71 @@
 
             <section id="menukort">
 
-                <section>
-                    <h3> Se menukort </h3>
+                <section id="semenukort" class="flexright">
+                    <img src="css/images/billeder/dessert.png" alt="Vikinge dessert" class="madbilleder">
+                    <section class="semenu-tekst">
+                        <h3> <img src="css/images/overskrifter/semenukort.png" alt="Se menukort" class="overskrifter"> </h3>
+                        <p>Bestil et måltid og spis som de mægtige krigere fra det guddommelige Valhal.</p>
+                        <a href="" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se hele menukortet her</a>
+                    </section>
+
                 </section>
 
-                <section>
-                    <h4>kaffe</h4>
+                <section id="sekaffe" class="flexleft">
+                    <img src="css/images/billeder/kaffe.jpg" alt="Guddommelig kaffe" class="madbilleder">
+                    <section class="semenu-tekst">
+                        <h4><img src="css/images/overskrifter/kaffe.png" alt="Kaffe" class="overskrifter"></h4>
+                        <p>På Café Sejd serveres altid guddommelig kaffe.
+                            Espresso, Cafe latte, Cortado, Cappucino osv.</p>
+                        <a href="" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se alle kafferne her</a>
+                    </section>
+
                 </section>
 
-                <section>
-                    <h4>øl</h4>
+                <section id="seoel" class="flexright">
+                    <img src="css/images/billeder/bajer.jpg" alt="Vikingernes vand" class="madbilleder">
+                    <section class="semenu-tekst">
+                        <h4><img src="css/images/overskrifter/oel.png" alt="Øl" class="overskrifter"></h4>
+                        <p>Drik som de ægte vikinger gjorde det.
+                            Vi serverer både mjød, øl, vin og andre drinks på Sejd.</p>
+                        <a href="" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se mere her</a>
+                    </section>
+
                 </section>
 
-                <section>
-                    <h4>tapas</h4>
+                <section id="setapas" class="flexleft">
+                    <img src="css/images/billeder/tapas.jpg" alt="Føde for kongerne" class="madbilleder">
+                    <section class="semenu-tekst">
+                        <h4><img src="css/images/overskrifter/tapas.png" alt="Se tapas" class="overskrifter"></h4>
+                        <p>Vi serverer vores Viking Tapas i forskellige udgaver, alle er en konge værdig.</p>
+                        <a href="" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se dine muligheder her</a>
+                    </section>
+
+                </section>
+            </section>
+
+            <section id="fortaellinger">
+                <img src="css/images/illustrationer/sejdillu3.png" alt="Illustration af skabelsesmyten" id="fortaellinger-billeder">
+                <section id="fortaellinger-tekst">
+                    <p>“ I begyndelsen var der ingenting. På den ene side var der varme og på den anden side var der kulde, og inde i midten var der det store ingenting kaldet Ginnungagap. Inde i Ginnungagap var der mørkt og der var fugtigt, for det sker der når kulde og varme møde. Og i lang tid skete der ingenting, ude i det store ingenting, men pludselig fødes det første væsen ud af ingenting. Det er Ymer og han er en jætte. Han er ond og han repræsenterer alt hvad der er ondt.... ”</p>
+
+                    <a href="" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Læs hele historien her</a>
+                </section>
+            </section>
+
+            <section id="some">
+                <h2>Følg Café Sejd</h2>
+
+                <section id="some-tekst">
+                    <h3>@CAFÉSEJD_JELLING</h3>
+                    <h3>CAFÉSEJD</h3>
                 </section>
 
+                <section id="some-billeder">
+                    <img src="css/images/billeder/insta-dessert.jpg" alt="instagrambillede af dessert">
+                    <img src="css/images/billeder/insta-mor.jpg" alt="instagrambillede af mor">
+                    <img src="css/images/billeder/insta-oel.jpg" alt="instagrambillede af øl">
+                </section>
 
             </section>
 
@@ -107,6 +181,8 @@
     <footer>
 
     </footer>
+
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>
