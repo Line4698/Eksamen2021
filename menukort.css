@@ -1,0 +1,176 @@
+/* STYLING PÅ HELE SIDEN ---------------------------------------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F8F8;
+}
+
+main {
+    height: 100vh;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: #2C3535;
+    text-transform: uppercase;
+}
+
+.overskrifter {
+    height: 2em;
+    padding-bottom: 1em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.vigtig {
+    font-weight: 500;
+}
+
+
+/* STYLING PÅ HELE SIDEN SLUT----------------------------------------------------------------*/
+
+/*MENUBAR-MOBIL -----------------------------------------------------------------------------*/
+
+/*Modificeret fra Line's eksamen vinter 2020*/
+
+#menubar {
+    width: 100%;
+    background-color: #F8F8F8;
+    position: fixed;
+    height: 6em;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#menubar img {
+    height: 5em;
+    padding: 0.5em;
+}
+
+
+/*BURGERMENUEN MED SPIN ----------------------------*/
+
+#menuslide {
+    position: absolute;
+    z-index: 99;
+    top: 1.2em;
+    right: 1em;
+    width: 2.5em;
+    padding: 1em;
+}
+
+.spinner {
+    transition: all 0.3s;
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+    background-color: #2C3535;
+    float: right;
+    transition: all 0.3s;
+    border-radius: 1em;
+}
+
+.midt,
+.bund {
+    position: relative;
+    margin-top: 0.5em;
+}
+
+.top {
+    position: relative;
+}
+
+
+input[type=checkbox]:checked ~ #menuslide > .midt {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .top {
+    transform: rotate(135deg);
+    margin-top: 1em;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .bund {
+    transform: rotate(-135deg);
+    margin-top: -0.9em;
+}
+
+/*BURGERMENUEN MED SPIN SLUT------------------------*/
+
+
+#Menu {
+    height: 100%;
+    margin-top: -1%;
+    position: fixed;
+    width: 100%;
+    transform: translateX(1350px);
+    transition: transform 250ms ease-in-out;
+    background-color: #DCE9E9;
+    padding-top: 2em;
+
+}
+
+/*MENUENS INDHOLD -----------------------------------*/
+#menu-indhold li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#menu-indhold a:any-link {
+    font-weight: 600;
+}
+
+
+input[type="checkbox"]:checked ~ #Menu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+/*MENUENS INDHOLD SLUT-------------------------------*/
+/*MENUBAR-MOBIL SLUT-------------------------------------------------------------------------*/
+
+
+
+
+/*MENU---------------------------------------------------------------------------------------*/
+#menukort {
+    min-height: 100vh;
+}
+
+#menukort h3 {
+    text-align: center;
+    padding-top: 2em;
+}
+
+#drikkevarer {
+    padding-top: 5em;
+}
+
+.varer li {
+    border-top: 5px solid #9CC6C9;
+    font-size: 1.5em;
+    padding: 0.3em 1em 0.3em 1em;
+}
+
+.pil {
+    float: right;
+    width: 1em;
+}
+
+.menubund {
+    border-bottom: 5px solid #9CC6C9;
+}
+
+/*MENU SLUT----------------------------------------------------------------------------------*/

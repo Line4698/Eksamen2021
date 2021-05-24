@@ -1,0 +1,250 @@
+/* STYLING PÅ HELE SIDEN ---------------------------------------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DCE9E9;
+}
+
+main {
+    height: 100vh;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: #2C3535;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.overskrifter {
+    height: 2em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.vigtig {
+    font-weight: 500;
+}
+
+.pil {
+    height: 1.5em;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}
+
+
+/* STYLING PÅ HELE SIDEN SLUT----------------------------------------------------------------*/
+
+/*MENUBAR-MOBIL -----------------------------------------------------------------------------*/
+
+/*Modificeret fra Line's eksamen vinter 2020*/
+
+#menubar {
+    width: 100%;
+    background-color: #F8F8F8;
+    position: fixed;
+    height: 6em;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#menubar img {
+    height: 5em;
+    padding: 0.5em;
+}
+
+
+/*BURGERMENUEN MED SPIN ----------------------------*/
+
+#menuslide {
+    position: absolute;
+    z-index: 99;
+    top: 1.2em;
+    right: 1em;
+    width: 2.5em;
+    padding: 1em;
+}
+
+.spinner {
+    transition: all 0.3s;
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+    background-color: #2C3535;
+    float: right;
+    transition: all 0.3s;
+    border-radius: 1em;
+}
+
+.midt,
+.bund {
+    position: relative;
+    margin-top: 0.5em;
+}
+
+.top {
+    position: relative;
+}
+
+
+input[type=checkbox]:checked ~ #menuslide > .midt {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .top {
+    transform: rotate(135deg);
+    margin-top: 1em;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .bund {
+    transform: rotate(-135deg);
+    margin-top: -0.9em;
+}
+
+/*BURGERMENUEN MED SPIN SLUT------------------------*/
+
+
+#Menu {
+    height: 100%;
+    margin-top: -1%;
+    position: fixed;
+    width: 100%;
+    transform: translateX(1350px);
+    transition: transform 250ms ease-in-out;
+    background-color: #DCE9E9;
+    padding-top: 2em;
+
+}
+
+/*MENUENS INDHOLD -----------------------------------*/
+#menu-indhold li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#menu-indhold a:any-link {
+    font-weight: 600;
+}
+
+
+input[type="checkbox"]:checked ~ #Menu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+/*MENUENS INDHOLD SLUT-------------------------------*/
+/*MENUBAR-MOBIL SLUT-------------------------------------------------------------------------*/
+
+
+
+
+
+/*OM CAFEEN ---------------------------------------------------------------------------------*/
+
+#omsejd-video {
+    padding: 2em 2em 0em 2em;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#scrollpil {
+    padding-top: 3em;
+}
+
+/*OM CAFEEN SLUT-----------------------------------------------------------------------------*/
+
+
+
+/*MEGET MERE SEJD ----------------------------------------------------------------------------*/
+#megetmere {
+    text-align: center;
+}
+
+#megetmere .overskrifterdouble {
+    height: 5em
+}
+
+#megetmere p {
+    text-align: left;
+    padding-top: 1em;
+
+}
+
+.illustrationer {
+    z-index: 96;
+    background-color: #2C3535;
+    width: 10em;
+    margin: 0 auto;
+    margin-bottom: -8em;
+    padding: 1em 3em 1em 3em;
+}
+
+.mere {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.mere-tekst {
+    background-color: #9CC6C9;
+    padding: 10em 1em 2em 1em;
+}
+
+/*MEGET MERE SEJD SLUT -----------------------------------------------------------------------*/
+
+
+
+
+/*PARTNERE -----------------------------------------------------------------------------------*/
+#partnere {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+
+
+/*PARTNERE SLUT ------------------------------------------------------------------------------*/
+
+
+
+
+/*SOME ---------------------------------------------------------------------------------------*/
+
+#some {
+    text-align: center;
+    padding: 2em 0em 2em 0em;
+}
+
+#some h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+#some h3 {
+    padding-bottom: 1em;
+    ;
+}
+
+#some-billeder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#some-billeder img {
+    width: 40%
+}
+
+
+/*SOME SLUT ----------------------------------------------------------------------------------*/

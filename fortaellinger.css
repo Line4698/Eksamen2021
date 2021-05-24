@@ -1,0 +1,205 @@
+/* STYLING PÅ HELE SIDEN ---------------------------------------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(images/billeder/background_slow_1.gif);
+    background-size: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.overskrifter {
+    height: 2em;
+}
+
+.overskrifterdouble {
+    height: 5.5em;
+}
+
+#scrollpil {
+    width: 60px;
+    padding-top: 2.5em;
+}
+
+.illustration {
+    height: 15em;
+}
+
+/* STYLING PÅ HELE SIDEN SLUT----------------------------------------------------------------*/
+
+/*MENUBAR-MOBIL -----------------------------------------------------------------------------*/
+
+/*Modificeret fra Line's eksamen vinter 2020*/
+
+#menubar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 6em;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#menubar img {
+    height: 5em;
+    padding: 0.5em;
+}
+
+
+/*BURGERMENUEN MED SPIN ----------------------------*/
+
+#menuslide {
+    position: absolute;
+    z-index: 99;
+    top: 1.2em;
+    right: 1em;
+    width: 2.5em;
+    padding: 1em;
+}
+
+.spinner {
+    transition: all 0.3s;
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+    background-color: white;
+    float: right;
+    transition: all 0.3s;
+    border-radius: 1em;
+}
+
+.midt,
+.bund {
+    position: relative;
+    margin-top: 0.5em;
+}
+
+.top {
+    position: relative;
+}
+
+
+input[type=checkbox]:checked ~ #menuslide > .midt {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .top {
+    transform: rotate(135deg);
+    margin-top: 1em;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .bund {
+    transform: rotate(-135deg);
+    margin-top: -0.9em;
+}
+
+/*BURGERMENUEN MED SPIN SLUT------------------------*/
+
+
+#Menu {
+    height: 100%;
+    margin-top: -1%;
+    position: fixed;
+    width: 100%;
+    transform: translateX(1350px);
+    transition: transform 250ms ease-in-out;
+    background-image: url(images/billeder/background_slow_1.gif);
+    background-size: cover;
+    padding-top: 2em;
+
+}
+
+/*MENUENS INDHOLD -----------------------------------*/
+#menu-indhold li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#menu-indhold a:any-link {
+    font-weight: 600;
+}
+
+input[type="checkbox"]:checked ~ #Menu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+/*MENUENS INDHOLD SLUT-------------------------------*/
+/*MENUBAR-MOBIL SLUT-------------------------------------------------------------------------*/
+
+
+
+
+/*MENU---------------------------------------------------------------------------------------*/
+#fortaellinger {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#fortaellinger h3 {
+    border-top: 5px solid #9CC6C9;
+}
+
+#fortaellinger .overskrifter {
+    padding: 5em 0em 5em 0em;
+}
+
+#fortaellinger .overskrifterdouble {
+    padding: 3em 0em 3em 0em;
+}
+
+#fortaellinger .menubund {
+    border-bottom: 5px solid #9CC6C9;
+}
+
+#fortaellinger #pil {
+    border: none;
+    padding-bottom: 5em;
+}
+
+/*MENU SLUT----------------------------------------------------------------------------------*/
+
+
+
+
+/*SKABELSEN ---------------------------------------------------------------------------------*/
+
+#skabelsen {
+    text-align: center;
+}
+
+#skabelsen p {
+    text-align: left;
+    color: white;
+    padding: 0em 2em 2em 2em;
+}
+
+#skabelsen img {
+    padding-bottom: 2em;
+}
+
+
+/*SKABELSEN SLUT ----------------------------------------------------------------------------*/
