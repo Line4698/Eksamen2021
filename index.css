@@ -1,3 +1,4 @@
+/* Styling på hele siden-----------------------------------------------------------------------------------------------*/
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #9CC6C9;
@@ -5,13 +6,107 @@ body {
 
 header {
     position: fixed;
+    width: 100%;
+    z-index: 99;
 }
+
+.overskrifter {
+    height: 2em;
+    padding-bottom: 1em;
+}
+
+
 
 #wrapper {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #F8F8F8;
 }
+
+
+
+/*styling af alle links*/
+
+a:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+
+/* Styling på hele siden SLUT-----------------------------------------------------------------------------------------*/
+
+
+
+/*top menuen----------------------------------------------------------------------------------------------------------*/
+
+#menu-desk ul li {
+    display: inline;
+    padding: 1em;
+}
+
+#menu-desk {
+    display: flex;
+    z-index: 99;
+}
+
+#menu-menukort {
+    color: white;
+}
+
+#menu-fortaellinger {
+    color: white;
+}
+
+#menu-sejd {
+    color: white;
+}
+
+#menu-kontakt {
+    color: white;
+}
+
+
+/*top menuen SLUT-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*SCROLL MENU---------------------------------------------------------------------------------------------------------*/
+
+/* styling af scroll-menuen */
+aside {
+    position: fixed;
+    float: right;
+    margin: 0 auto;
+}
+
+#scroll-menu {
+    float: right;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+/* styling af ikonerne i scroll-menuen */
+
+#scroll-menu img {
+    width: 1em;
+    padding: 1em;
+}
+
+#scroll-menu a:active {
+    opacity: 100%;
+}
+
+/*SCROLL MENU SLUT----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*INTROVIDEO SOM STADIG MANGLER AT BLIVE FIKSET-----------------------------------------------------------------------*/
 
 #logo img {
     height: 10em;
@@ -26,97 +121,214 @@ header {
 
 #introimg {
     height: 100vh;
-    background-image: url(images/tapas-test.jpg);
+    background-color: darkcyan;
     background-size: cover;
-    opacity: 70%;
     z-index: 0;
 }
 
-a:any-link {
-    text-decoration: none;
-    color: white
-}
+/*INTROVIDEO SOM STADIG MANGLER AT BLIVE FIKSET SLUT------------------------------------------------------------------*/
 
-#menu-desk ul li {
-    display: inline;
-    padding: 1em;
-}
 
-#menu-desk {
-    display: flex;
-    z-index: 2;
-}
+
+
+/*SEKTION OM CAFÉEN MED INTROTEKST OG 2 ILLUSTRATIONER----------------------------------------------------------------*/
 
 #omcafeen {
     height: 100vh;
     display: flex;
-    padding-top: 5em;
     background-color: #DCE9E9;
 }
 
-#omcafeen p {
+#omcafeentekst {
     width: 50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
-    margin-top: 5em;
+    margin-top: 12em;
+}
+
+#omcafeentekst p {
+    padding: 1em;
 }
 
 #omcafeen img {
     width 25%;
     max-height: 80vh;
+    margin-top: 8em;
 }
 
 #sejdright {
     transform: scaleX(-1)
 }
 
+/*SEKTION OM CAFÉEN MED INTROTEKST OG 2 ILLUSTRATIONER SLUT-----------------------------------------------------------*/
+
+
+
+
+/*SEKTION OM ÅBNINGSTIDER OG KONTAKT----------------------------------------------------------------------------------*/
+
+#kontakt {
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    vertical-align: middle;
+}
+
 #aabningstider {
     text-align: center;
     width: 50%;
+    padding-top: 40vh;
+
 }
 
 #kontaktinfo {
     text-align: center;
     width: 50%;
+    padding-top: 40vh;
 }
 
-#kontakt {
-    padding: 5em 0em 5em 0em;
-    display: flex;
-    margin: 0 auto;
-}
+/*SEKTION OM ÅBNINGSTIDER OG KONTAK SLUT------------------------------------------------------------------------------*/
 
+
+
+
+/*SEKTION OM MENUKORTET OG UDVALGTE LÆKKERIER-------------------------------------------------------------------------*/
 
 #menukort {
     background-color: #DCE9E9;
+    padding-top: 8em;
+    padding-bottom: 5em;
+}
+
+.madbilleder {
+    width: 30%;
+    margin: 2em 1em 2em 1em;
+    z-index: 98;
+}
+
+.semenu-tekst {
+    background-color: #9CC6C9;
+    padding: 3em;
+    margin: 1em;
+    width: 80%;
 }
 
 
+/* styling af links */
 
-
-
-
-
-/* width */
-::-webkit-scrollbar {
-    width: 1em;
+#menukort a {
+    font-size: 1.5em;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: none;
+.pil {
+    height: 1.5em;
     padding-right: 1em;
-    height: 1em;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: pink;
-    height: 2em;
+    vertical-align: middle;
 }
 
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+/* flexede elementer hvor billedet er til højre*/
+
+.flexright {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    margin: 0 auto;
 }
+
+.flexright .madbilleder {
+    margin-left: -9em;
+}
+
+.flexright .semenu-tekst p {
+    width: 80%;
+}
+
+.flexright .semenu-tekst h3,
+.flexright .semenu-tekst h4 {
+    text-align: center;
+    margin-right: 8em;
+}
+
+
+/* flexede elementer hvor billedet er til venstre*/
+
+.flexleft {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flexleft .semenu-tekst {
+    padding-left: 11em;
+}
+
+.flexleft .madbilleder {
+    margin-right: -9em;
+}
+
+
+.flexleft .semenu-tekst h4 {
+    text-align: center;
+    margin-right: 3em;
+}
+
+/*SEKTION OM MENUKORTET OG UDVALGTE LÆKKERIER SLUT---------------------------------------------------------------------*/
+
+
+
+
+/*SEKTION OM FORTÆLLINGEEEEEER-----------------------------------------------------------------------------------------*/
+
+#fortaellinger {
+    height: 100vh;
+    background-image: url(images/billeder/background_slow.gif);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#fortaellinger-billeder {
+    padding: 10em 5em 5em 5em;
+}
+
+#fortaellinger-tekst {
+    padding: 10em 5em 5em 5em;
+    font-size: 1.5em;
+}
+
+/*SEKTION OM FORTÆLLINGEEEEEER SLUT------------------------------------------------------------------------------------*/
+
+
+
+/* SEKTION OM SOCIALE MEDIER ------------------------------------------------------------------------------------------*/
+
+#some {
+    background-color: #DCE9E9;
+    text-align: center;
+}
+
+#some h2 {
+    font-size: 3em;
+    padding-top: 1em;
+}
+
+#some-billeder {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5em;
+}
+
+#some-billeder img {
+    width: 300px;
+}
+
+#some-tekst {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+/* SEKTION OM SOCIALE MEDIER SLUT--------------------------------------------------------------------------------------*/

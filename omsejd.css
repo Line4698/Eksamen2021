@@ -44,7 +44,7 @@ p {
 
 #menubar {
     width: 100%;
-    background-color: #F8F8F8;
+    background-color: white;
     position: fixed;
     height: 6em;
     overflow: hidden;
@@ -154,13 +154,16 @@ input[type=checkbox] {
 /*OM CAFEEN ---------------------------------------------------------------------------------*/
 
 #omsejd-video {
-    padding: 2em 2em 0em 2em;
+    padding-top: 20vh;
     text-align: center;
-    min-height: 100vh;
+}
+
+#omsejd-video video {
+    width: 100vw;
 }
 
 #scrollpil {
-    padding-top: 3em;
+    padding: 3em 0em 3em 0em;
 }
 
 /*OM CAFEEN SLUT-----------------------------------------------------------------------------*/
@@ -211,8 +214,130 @@ input[type=checkbox] {
 #partnere {
     background-color: #f8f8f8;
     text-align: center;
+    min-height: 80vh;
 }
 
+#partnere h2 {
+    padding-top: 2em;
+}
+
+#partnere h3 {
+    font-size: 1.5em;
+}
+
+#partnere p {
+    text-align: left;
+    padding-top: 1em;
+}
+
+.billeder {
+    z-index: 96;
+    margin: 0 auto;
+    margin-bottom: -8em;
+
+}
+
+.partnere {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.partnere-tekst {
+    background-color: white;
+    border: 5px solid #9CC6C9;
+    padding: 10em 1em 2em 1em;
+    height: 6em;
+}
+
+
+/*modificeret fra w3schools*/
+.mySlides {
+    display: none
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    padding: 0.2em;
+    transition: 0.6s ease;
+    margin-top: -14em;
+    z-index: 99;
+}
+
+/* Position the "next button" to the right */
+.next {
+    float: right;
+}
+
+.prev {
+    float: left;
+}
+
+
+#menu-prikker {
+    width: 100vw;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0em 0.258em 0em 0.258em;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    height: 20px;
+    width: 20px;
+    border: none;
+    background: none;
+    background-image: url(images/overskrifter/rombe.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 
 /*PARTNERE SLUT ------------------------------------------------------------------------------*/

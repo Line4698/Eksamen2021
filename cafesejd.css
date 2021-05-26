@@ -3,10 +3,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #DCE9E9;
-}
-
-main {
-    height: 100vh;
+    width: 100vw;
 }
 
 a:any-link {
@@ -37,6 +34,34 @@ p {
 }
 
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.scrollpil {
+    padding-bottom: 1em;
+    animation: shake-vertical 1s ease-in-out infinite;
+}
+
+@keyframes shake-vertical {
+
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20x);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
 /* STYLING PÅ HELE SIDEN SLUT----------------------------------------------------------------*/
 
 /*MENUBAR-MOBIL -----------------------------------------------------------------------------*/
@@ -44,8 +69,8 @@ p {
 /*Modificeret fra Line's eksamen vinter 2020*/
 
 #menubar {
-    width: 100%;
-    background-color: #F8F8F8;
+    width: 100vw;
+    background-color: white;
     position: fixed;
     height: 6em;
     overflow: hidden;
@@ -113,7 +138,7 @@ input[type=checkbox]:checked ~ #menuslide > .bund {
     margin-top: -1%;
     position: fixed;
     width: 100%;
-    transform: translateX(1350px);
+    transform: translateX(100vw);
     transition: transform 250ms ease-in-out;
     background-color: #DCE9E9;
     padding-top: 2em;
@@ -151,13 +176,22 @@ input[type=checkbox] {
 
 
 
+/*VIDEO -------------------------------------------------------------------------------------*/
+
+#forside-video {
+    display: none;
+}
+
+/*VIDEO SLUT --------------------------------------------------------------------------------*/
+
+
+
 
 /*OM CAFEEN ---------------------------------------------------------------------------------*/
 
 #omcafeen {
-    padding: 2em 2em 0em 2em;
+    padding: 2em 2em 2em 2em;
     text-align: center;
-    min-height: 100vh;
 }
 
 #omcafeen .illustration {
@@ -173,9 +207,6 @@ input[type=checkbox] {
     padding: 1em;
 }
 
-#scrollpil {
-    padding-top: 3em;
-}
 
 /*OM CAFEEN SLUT-----------------------------------------------------------------------------*/
 
@@ -184,24 +215,27 @@ input[type=checkbox] {
 
 /*KONTAKT -----------------------------------------------------------------------------------*/
 
+.background {
+    background-color: #f8f8f8;
+}
+
 #kontakt {
     text-align: center;
     background-color: #F8F8F8;
     padding: 2em;
+    max-width: 800px;
 }
 
 #kontakt section {
     border: 5px solid #9CC6C9;
     background-color: white;
-    margin-top: 2em;
+    margin: 2em 0em 2em 0em;
     padding: 2em 0em 2em 0em;
 }
 
 #kontakt li {
     padding: 0.1em;
 }
-
-
 
 /*KONTAKT SLUT--------------------------------------------------------------------------------*/
 
@@ -235,12 +269,24 @@ input[type=checkbox] {
     padding: 10em 1em 2em 1em;
 }
 
+.semenu-tekst .overskrifter {
+    display: none;
+}
+
+.semenu-tekst p {
+    display: none;
+}
+
 /*SE VORES MENU SLUT -------------------------------------------------------------------------*/
 
 
 
 
 /*FORTAELLINGER ------------------------------------------------------------------------------*/
+#article {
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
 #fortaellinger {
     background-image: url(images/billeder/background_slow_1.gif);
@@ -248,6 +294,11 @@ input[type=checkbox] {
     color: white;
     text-align: center;
     padding-bottom: 3em;
+}
+
+#fortaellinger .desktop {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #fortaellinger h2 {
@@ -302,9 +353,259 @@ input[type=checkbox] {
     justify-content: space-evenly;
 }
 
+#some-billeder a {
+    width: 40%;
+}
+
 #some-billeder img {
-    width: 40%
+    width: 100%;
 }
 
 
+#insta-laptop,
+#insta-tablet {
+    display: none;
+}
+
 /*SOME SLUT ----------------------------------------------------------------------------------*/
+
+
+
+
+/*MEDIA RESPONSIVE ---------------------------------------------------------------------------*/
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {
+
+    /*FORSIDE------------------------------------------------*/
+
+    #forside-video {
+        display: block;
+        text-align: center;
+    }
+
+    video {
+        width: 100vw;
+        z-index: 98;
+    }
+
+    #forside-video .scrollpil {
+        width: 60px;
+    }
+
+    @keyframes shake-vertical {
+
+        0% {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+
+        50% {
+            -webkit-transform: translateY(25px);
+            transform: translateY(25x);
+        }
+
+        100% {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+    }
+
+    /*OM CAFEEN ---------------------------------------------*/
+    #omcafeen {
+        padding: 0em;
+    }
+
+    #omcafeen .scrollpil {
+        display: none;
+    }
+
+    #omcafeen-tekst {
+        display: flex;
+        background: none;
+        padding-bottom: 2em;
+    }
+
+    #omcafeen p {
+        background: none;
+        padding: 1em 0em 0em 0em;
+    }
+
+    .desktop-illustrationer img {
+        display: none;
+    }
+
+    .desktop-illustrationer {
+        background-image: url(images/illustrationer/sejdillu3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30%;
+    }
+
+    .illustrationright {
+        transform: scaleX(-1);
+    }
+
+    #desktop-tekst {
+        width: 40%;
+    }
+
+    /*KONTAKT -----------------------------------------------*/
+    #kontakt {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        max-width: 800px;
+
+    }
+
+    #kontakt section {
+        width: 45%;
+    }
+
+
+    /*MENUKORT ----------------------------------------------*/
+    #menukort .se {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #menukort .left {
+        flex-direction: row-reverse;
+    }
+
+    #menukort .se .madbilleder {
+        width: 12em;
+        height: 12em;
+        margin: 2em 0em 2em 0em;
+    }
+
+    #menukort .right .semenu-tekst {
+        width: 70%;
+        margin: 1em 1em 1em -6em;
+        padding: 1em 4em 1em 7em;
+    }
+
+    #menukort .left .semenu-tekst {
+        width: 70%;
+        margin: 1em -6em 1em 1em;
+        padding: 1em 7em 1em 4em;
+    }
+
+    .semenu-tekst .overskrifter {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .semenu-tekst p {
+        display: block;
+        text-align: left;
+        padding: 1em;
+    }
+
+
+
+    /*FORTÆLLINGER ------------------------------------------*/
+
+    #fortaellinger .illustration {
+        float: right;
+    }
+
+    #fortaellinger p {
+        text-align: left;
+    }
+
+
+
+    /*SOME --------------------------------------------------*/
+    #insta-tablet {
+        display: block;
+    }
+
+    #some-billeder a {
+        width: 30%;
+    }
+
+    #some-tekst {
+        display: flex;
+    }
+
+    #some-tekst h3 {
+        width: 50%;
+        padding-bottom: 2em;
+    }
+
+
+
+}
+
+
+
+@media only screen and (min-width:1100px) {
+
+    /*FORSIDE------------------------------------------------*/
+    @keyframes shake-vertical {
+
+        0% {
+            -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+        }
+
+        50% {
+            -webkit-transform: translateY(-45px);
+            transform: translateY(-45x);
+        }
+
+        100% {
+            -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+        }
+    }
+
+
+
+    /*OM CAFEEN ---------------------------------------------*/
+    #omcafeen {
+        padding: 0em 5em 5em;
+    }
+
+    #omcafeen p {
+        font-size: 1.4em;
+    }
+
+    /*KONTAKT -----------------------------------------------*/
+
+    #kontakt li {
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+
+
+    /*MENUKORT ----------------------------------------------*/
+
+    .semenu-tekst p {
+        font-size: 1.4em;
+
+    }
+
+
+    /*FORTÆLLINGER ------------------------------------------*/
+
+
+
+    /*SOME --------------------------------------------------*/
+    #insta-laptop {
+        display: block;
+    }
+
+    #some-billeder a {
+        width: 20%;
+    }
+
+
+}
+
+/*MEDIA RESPONSIVE SLUT-----------------------------------------------------------------------*/
