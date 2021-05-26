@@ -304,6 +304,16 @@ aside {
 
 /* SEKTION OM SOCIALE MEDIER ------------------------------------------------------------------------------------------*/
 
+#some {
+    background-color: #DCE9E9;
+    text-align: center;
+}
+
+#some h2 {
+    font-size: 3em;
+    padding-top: 1em;
+}
+
 #some-billeder {
     display: flex;
     justify-content: space-evenly;
@@ -312,6 +322,13 @@ aside {
 
 #some-billeder img {
     width: 300px;
+}
+
+#some-tekst {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
 }
 
 /* SEKTION OM SOCIALE MEDIER SLUT--------------------------------------------------------------------------------------*/

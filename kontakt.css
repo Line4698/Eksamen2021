@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F8F8F8;
+    background-color: #DCE9E9;
 }
 
 main {
@@ -13,12 +13,12 @@ a:any-link {
     text-decoration: none;
     color: #2C3535;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .overskrifter {
     height: 2em;
     padding-bottom: 1em;
-    max-width: 300px;
 }
 
 p {
@@ -30,9 +30,12 @@ p {
     font-weight: 500;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.pil {
+    height: 1.5em;
+    padding-right: 0.5em;
+    vertical-align: middle;
 }
+
 
 /* STYLING PÅ HELE SIDEN SLUT----------------------------------------------------------------*/
 
@@ -148,152 +151,141 @@ input[type=checkbox] {
 
 
 
-/*MENUKORT-----------------------------------------------------------------------------------*/
-#menukort {
-    min-height: 100vh;
-}
 
-#menukort h2 {
+/*KONTAKT -----------------------------------------------------------------------------------*/
+
+#kontakt {
     text-align: center;
-    padding-top: 2em;
+    background-color: #F8F8F8;
+    padding: 6em 2em 2em 2em;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-#drikkevarer {
-    padding-top: 5em;
+#kontakt section {
+    border: 5px solid #9CC6C9;
+    background-color: white;
+    margin-top: 2em;
+    padding: 2em 0em 2em 0em;
+}
+
+#kontakt li {
+    padding: 0.1em;
 }
 
 
-.accordion {
-    width: 100%;
-    text-align: left;
-    transition: 0.4s;
-    border: none;
-    border-top: 5px solid #9CC6C9;
-    font-size: 1.5em;
-    padding: 0.3em 1em 0.3em 1em;
-    text-transform: uppercase;
-    background: none;
+#rutevejledning {
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0 auto;
+    max-width: 864px;
 }
 
-.tablet {
+#rutevejledning #vejledning {
+    padding: 2em;
+}
+
+#kort {
     display: none;
 }
 
-.menubund {
-    border-bottom: 5px solid #9CC6C9;
-}
+/*KONTAKT SLUT--------------------------------------------------------------------------------*/
 
-.panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+
+
+
+/*SOME ---------------------------------------------------------------------------------------*/
+
+#some {
     text-align: center;
+    padding: 2em 0em 2em 0em;
+}
+
+#some h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+#some h3 {
+    padding-bottom: 1em;
+    ;
+}
+
+#some-billeder {
     display: flex;
-    flex-direction: column;
-    margin: 0em 1em 0em 1em;
+    justify-content: space-evenly;
 }
 
-.panel p {
-    text-align: left;
-    padding-top: 1em;
+#some-billeder a {
+    width: 40%;
 }
 
-.billeder {
-    z-index: 96;
-    margin: 1em 0em -8em 0em;
+#some-billeder img {
+    width: 100%;
 }
 
-.panel-tekst {
-    background-color: white;
-    border: 5px solid #9CC6C9;
-    padding: 10em 1em 2em 1em;
-    margin-bottom: 1em;
-    float: left;
+
+#insta-laptop,
+#insta-tablet {
+    display: none;
 }
 
-.panel-tekst .pris {
-    float: right;
-    padding: 0;
-}
 
-.accordion:after {
-    content: url(images/overskrifter/pilned.png);
-    float: right;
-    transform: scale(.5);
-}
+/*SOME SLUT ----------------------------------------------------------------------------------*/
 
-.active:after {
-    content: url(images/overskrifter/pilop.png);
-}
 
-/*MENUKORT SLUT------------------------------------------------------------------------------*/
-
-@media only screen and (min-width:480px) {}
-
-@media only screen and (min-width:768px) {
-
-    #menukort {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .mobil {
-        display: none;
-    }
-
-    .tablet {
-        display: block;
-        border: none;
-        margin-left: 1em;
-    }
-
-    .madbilleder {
-        float: right;
-        margin: 0em -4.2em 0em 0em;
-        vertical-align: middle;
-        height: 7em;
-    }
-
-    .left .madbilleder {
-        float: left;
-        margin-left: -6.2em;
-    }
-
-    .left .overskrifter {
-        margin-left: 2em;
-    }
-
-    .knap-tablet {
-        background-color: white;
-        border: 5px solid #9cc6c9;
-        margin: 2em 2em 2em 4em;
-        width: 70%;
-    }
-
-    .left {
-        margin-left: 10em;
-    }
-
-    .accordion:after {
-        transform: scale(1);
-        padding: 3em 1em 0em 0em;
-    }
-
-    .accordion .overskrifter {
-        padding: 2.6em 0em 0em 1em;
-        height: 1.5em;
-    }
-
-    .menu-indhold img,
-    .menu-indhold h3 {
-        display: none;
-    }
-
-    .panel-tekst {
-        border: none;
-        width: 100%;
-        padding: 0;
-    }
-}
 
 @media only screen and (min-width:1100px) {}
+
+@media only screen and (min-width:768px) {
+    #kontakt {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #kontakt section {
+        width: 45%;
+    }
+
+    #kort {
+        display: block;
+        padding-bottom: 5em;
+    }
+
+    /*SOME --------------------------------------------------*/
+    #insta-tablet {
+        display: block;
+    }
+
+    #some-billeder a {
+        width: 30%;
+    }
+
+    #some-tekst {
+        display: flex;
+    }
+
+    #some-tekst h3 {
+        width: 50%;
+        padding-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+
+    /*KONTAKT -----------------------------------------------*/
+
+    #kontakt li {
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+
+    /*SOME --------------------------------------------------*/
+    #insta-laptop {
+        display: block;
+    }
+
+    #some-billeder a {
+        width: 20%;
+    }
+}

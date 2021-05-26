@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #9CC6C9;
+}
+
+header {
+    position: fixed;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+
+#logo img {
+    height: 10em;
+    padding: 1em 0em 0em 2em;
+    z-index: 1;
+}
+
+#intro {
+    background-color: #2C3535;
+    z-index: -1;
+}
+
+#introimg {
+    height: 100vh;
+    background-image: url(images/tapas-test.jpg);
+    background-size: cover;
+    opacity: 70%;
+    z-index: 0;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: white
+}
+
+#menu-desk ul li {
+    display: inline;
+    padding: 1em;
+}
+
+#menu-desk {
+    display: flex;
+    z-index: 2;
+}
+
+#omcafeen {
+    height: 100vh;
+    display: flex;
+    padding-top: 5em;
+    background-color: #DCE9E9;
+}
+
+#omcafeen p {
+    width: 50%;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#omcafeen img {
+    width 25%;
+    max-height: 80vh;
+}
+
+#sejdright {
+    transform: scaleX(-1)
+}
+
+#aabningstider {
+    text-align: center;
+    width: 50%;
+}
+
+#kontaktinfo {
+    text-align: center;
+    width: 50%;
+}
+
+#kontakt {
+    padding: 5em 0em 5em 0em;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+#menukort {
+    background-color: #DCE9E9;
+}
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+    padding-right: 1em;
+    height: 1em;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: pink;
+    height: 2em;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -31,6 +31,26 @@ a:any-link {
 #scrollpil {
     width: 60px;
     padding-top: 2.5em;
+    padding-bottom: 1em;
+    animation: shake-vertical 1s ease-in-out infinite;
+}
+
+@keyframes shake-vertical {
+
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20x);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
 }
 
 .illustration {
@@ -152,6 +172,11 @@ input[type=checkbox] {
 
 
 /*MENU---------------------------------------------------------------------------------------*/
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 #fortaellinger {
     padding-top: 6em;
     display: flex;
@@ -175,10 +200,11 @@ input[type=checkbox] {
     border-bottom: 5px solid #9CC6C9;
 }
 
-#fortaellinger #pil {
-    border: none;
+#pil {
+    text-align: center;
     padding-bottom: 5em;
 }
+
 
 /*MENU SLUT----------------------------------------------------------------------------------*/
 
@@ -203,3 +229,60 @@ input[type=checkbox] {
 
 
 /*SKABELSEN SLUT ----------------------------------------------------------------------------*/
+
+
+/*MEDIA RESPONSIVE ---------------------------------------------------------------------------*/
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {
+    #fortaellinger {
+        display: flex;
+        flex-direction: row;
+        margin: 0.3em;
+    }
+
+    #fortaellinger h3 {
+        width: 33%;
+        border: 5px solid #9CC6C9;
+        height: 30em;
+    }
+
+    #fortaellinger #midt {
+        border: none;
+        border-top: 5px solid #9CC6C9;
+        border-bottom: 5px solid #9CC6C9;
+    }
+
+    #fortaellinger h3 img {
+        margin-top: 8em;
+        max-width: 230px;
+    }
+
+    .start {
+        display: none;
+    }
+
+
+
+    .historie {
+        display: flex;
+    }
+
+    .left {
+        flex-direction: row-reverse;
+    }
+
+    .tekst {
+        width: 60%;
+    }
+
+    .illustration {
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:1100px) {}
