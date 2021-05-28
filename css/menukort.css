@@ -1,0 +1,257 @@
+/*MENUKORT TIL MOBIL-------------------------------------------------------------------------*/
+/* The container */
+#filtrering .container {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Hide the browser's default checkbox */
+#filtrering .container input {
+    display: none;
+}
+
+/* Create a custom checkbox */
+#filtrering .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background: none;
+    border: 1px solid black;
+    transform: rotate(45deg);
+}
+
+
+/* Create the checkmark/indicator */
+#filtrering .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+#filtrering .container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+#filtrering .container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: black;
+}
+
+
+
+
+
+
+
+
+/*SELVE MENUKORTET ----------------------------------*/
+#menukort-mobil {
+    min-height: 100vh;
+    padding-top: 5em;
+    background-color: #f8f8f8;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2em;
+}
+
+/*ACCORDION -----------------------------------------*/
+.accordion {
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    border: none;
+    border-top: 5px solid #9CC6C9;
+    font-size: 1.5em;
+    padding: 0.3em 1em 0.3em 1em;
+    text-transform: uppercase;
+    background: none;
+}
+
+.accordion:after {
+    content: url(images/ekstra/pilned.png);
+    float: right;
+    transform: scale(.5);
+}
+
+.active:after {
+    content: url(images/ekstra/pilop.png);
+}
+
+
+/*DROP DOWN PANEL -----------------------------------*/
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    margin: 0em 1em 0em 1em;
+    text-align: center;
+}
+
+.panel-tekst {
+    background-color: white;
+    border: 5px solid #9CC6C9;
+    padding: 10em 1em 2em 1em;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+.menu-indhold {
+    z-index: 99;
+    margin: 1em 0em -8em 0em;
+}
+
+.varerliste {
+    text-align: left;
+}
+
+.varerliste li {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5em;
+}
+
+.varerliste .ekstra {
+    padding-top: 0em;
+}
+
+.varerliste .bund-varer {
+    padding-bottom: 2em;
+}
+
+.varerliste img {
+    height: 1em;
+    padding: 0.1em 0.5em 0em 0.5em;
+}
+
+.varerliste #navn {
+    float: left;
+    padding-left: 2em;
+}
+
+#mad-desktop .varerliste #navn {
+    max-width: 350px;
+}
+
+.mobil-mad {
+    max-width: 80vw;
+}
+
+.varerliste #pris {
+    float: right;
+    padding-right: 2em;
+}
+
+
+/*MENUKORT TIL MOBIL ------------------------------------------------------------------------*/
+
+#menukort-desktop {
+    display: none;
+}
+
+.menubund {
+    border-bottom: 5px solid #9CC6C9;
+}
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {
+
+    #menukort-mobil {
+        display: none;
+    }
+
+    /*MENUKORT TIL DESKTOP ----------------------------------------------------------------------*/
+    #menukort-desktop {
+        display: block;
+        padding-top: 7em;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-left: 2em;
+    }
+
+    .overskrifter {
+        max-width: 320px;
+    }
+
+    .madbilleder {
+        float: right;
+        margin: 0em -4.2em 0em 0em;
+        vertical-align: middle;
+        height: 7em;
+    }
+
+    .left .madbilleder {
+        float: left;
+        margin-left: -6.2em;
+    }
+
+    .left .overskrifter {
+        margin-left: 2em;
+    }
+
+    .desktop-knap {
+        background-color: white;
+        border: 5px solid #9cc6c9;
+        margin: 2em 2em 2em 4em;
+        width: 70%;
+    }
+
+    .left {
+        margin-left: 10em;
+    }
+
+    .accordion {
+        border: none;
+    }
+
+    .accordion:after {
+        transform: scale(1);
+        padding: 3em 1em 0em 0em;
+    }
+
+    .accordion .overskrifter {
+        padding: 2.6em 0em 0em 1em;
+        height: 1.5em;
+    }
+
+    .menu-indhold img,
+    .menu-indhold h3 {
+        display: none;
+    }
+
+    .panel-tekst {
+        border: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    /*MENUKORT TIL DESKTOP SLUT------------------------------------------------------------------*/
+}
+
+@media only screen and (min-width:890px) {
+    .overskrifter {
+        max-width: none;
+    }
+
+    #mad-desktop .varerliste #navn {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width:1024px) {}

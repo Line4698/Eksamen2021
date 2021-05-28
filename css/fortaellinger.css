@@ -1,0 +1,152 @@
+body {
+    background-image: url(images/ekstra/background_slow_1.gif);
+    background-size: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* STYLING AF MENUEN -------------------------------------------------------------------------*/
+/*modificeret fra Line's eksamen vinter 2020--------*/
+
+/*MENUBAREN ----------------------------------------*/
+#topmenu {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+    background-color: white;
+}
+
+/*MENUENS INDHOLD -----------------------------------*/
+#Menu {
+    background-image: url(images/ekstra/background_slow_1.gif);
+    background-size: cover;
+}
+
+a:any-link {
+    color: white;
+}
+
+/* STYLING AF MENUEN SLUT---------------------------------------------------------------------*/
+
+#fortaellinger {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#fortaellinger h3 {
+    border-top: 5px solid #9CC6C9;
+}
+
+#fortaellinger .overskrifter {
+    padding: 5em 0em 5em 0em;
+}
+
+.overskrifterdouble {
+    height: 5.5em;
+    padding: 3em 0em 3em 0em;
+}
+
+
+#fortaellinger .menubund {
+    border-bottom: 5px solid #9CC6C9;
+}
+
+#pil {
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+
+/*MENU SLUT----------------------------------------------------------------------------------*/
+
+
+
+
+/*SKABELSEN ---------------------------------------------------------------------------------*/
+
+#skabelsen {
+    text-align: center;
+}
+
+#skabelsen p {
+    text-align: left;
+    color: white;
+    padding: 0em 2em 2em 2em;
+}
+
+#skabelsen img {
+    padding-bottom: 2em;
+}
+
+.megafon {
+    padding-left: 2em;
+}
+
+/*SKABELSEN SLUT ----------------------------------------------------------------------------*/
+
+
+/*MEDIA RESPONSIVE ---------------------------------------------------------------------------*/
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {
+    #fortaellinger {
+        display: flex;
+        flex-direction: row;
+        margin: 0.3em;
+    }
+
+    #fortaellinger h3 {
+        width: 33%;
+        border: 5px solid #9CC6C9;
+        height: 30em;
+    }
+
+    #fortaellinger #midt {
+        border: none;
+        border-top: 5px solid #9CC6C9;
+        border-bottom: 5px solid #9CC6C9;
+    }
+
+    #fortaellinger h3 img {
+        margin-top: 8em;
+        max-width: 230px;
+    }
+
+    .start {
+        display: none;
+    }
+
+
+
+    .historie {
+        display: flex;
+    }
+
+    .left {
+        flex-direction: row-reverse;
+    }
+
+    .tekst {
+        width: 60%;
+    }
+
+    .illustration {
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:1100px) {}

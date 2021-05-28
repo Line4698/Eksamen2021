@@ -1,0 +1,345 @@
+/* STYLING AF MENUEN -------------------------------------------------------------------------*/
+/*modificeret fra Line's eksamen vinter 2020--------*/
+
+/*MENUBAREN ----------------------------------------*/
+#topmenu {
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    height: 6em;
+    overflow: hidden;
+    z-index: 98;
+}
+
+#logo {
+    height: 5em;
+    padding: 0.5em;
+}
+
+#navigation-desktop {
+    display: none;
+}
+
+
+/*BURGERMENUEN MED SPIN ----------------------------*/
+#menuslide {
+    position: absolute;
+    z-index: 99;
+    top: 1.2em;
+    right: 1em;
+    width: 2.5em;
+    padding: 1em;
+}
+
+.spinner {
+    transition: all 0.3s;
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+    background-color: #2C3535;
+    float: right;
+    transition: all 0.3s;
+    border-radius: 1em;
+}
+
+.midt,
+.bund {
+    position: relative;
+    margin-top: 0.5em;
+}
+
+.top {
+    position: relative;
+}
+
+
+input[type=checkbox]:checked ~ #menuslide > .midt {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .top {
+    transform: rotate(135deg);
+    margin-top: 1em;
+}
+
+input[type=checkbox]:checked ~ #menuslide > .bund {
+    transform: rotate(-135deg);
+    margin-top: -0.9em;
+}
+
+
+/*MENUENS INDHOLD -----------------------------------*/
+#Menu {
+    height: 100%;
+    margin-top: -3px;
+    position: fixed;
+    width: 100%;
+    transform: translateX(100vw);
+    transition: transform 250ms ease-in-out;
+    background-color: #DCE9E9;
+    padding-top: 2em;
+
+}
+
+#menu-indhold li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#menu-indhold a:any-link {
+    font-weight: 600;
+}
+
+
+input[type="checkbox"]:checked ~ #Menu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+/* STYLING AF MENUEN SLUT---------------------------------------------------------------------*/
+
+
+/* GENEREL STYLING ---------------------------------------------------------------------------*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dce9e9;
+    width: 100vw;
+    color: #2C3535;
+}
+
+/*SKRIFT --------------------------------------------*/
+.overskrifter {
+    height: 2em;
+    padding-bottom: 1em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.vigtig {
+    font-weight: 500;
+}
+
+/*LINKS ---------------------------------------------*/
+a:any-link {
+    text-decoration: none;
+    color: #2C3535;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*PIL VED LINKS -------------------------------------*/
+.pil {
+    height: 1.5em;
+    padding-right: 0.5em;
+    vertical-align: middle;
+}
+
+/*SCROLLPIL -----------------------------------------*/
+.scrollpil {
+    padding-bottom: 1em;
+    animation: shake-vertical 1s ease-in-out infinite;
+    width: 60px;
+}
+
+@keyframes shake-vertical {
+
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20x);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+
+/* GENEREL STYLING SLUT-----------------------------------------------------------------------*/
+
+
+/* SOME STYLING ------------------------------------------------------------------------------*/
+#some {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0em 2em 0em;
+}
+
+#some h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+#some h3 {
+    padding-bottom: 1em;
+    ;
+}
+
+#some-billeder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#some-billeder a {
+    width: 40%;
+}
+
+#some-billeder img {
+    width: 100%;
+}
+
+
+#insta-laptop,
+#insta-tablet {
+    display: none;
+}
+
+/* SOME STYLING SLUT--------------------------------------------------------------------------*/
+
+
+
+
+/* RESPONSIV ---------------------------------------------------------------------------------*/
+@media only screen and (min-width:320px) {}
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {
+
+    /*MENUENS -------------------------------------------*/
+    #menuslide {
+        display: none;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    #navigation-desktop {
+        display: block;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40em;
+        z-index: 99;
+    }
+
+    #navigation-desktop ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #navigation-desktop li {
+        padding: 1em;
+    }
+
+    /*MENUENS SLUT --------------------------------------*/
+
+
+    /*SCROLLPIL -----------------------------------------*/
+    @keyframes shake-vertical {
+
+        0% {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+
+        50% {
+            -webkit-transform: translateY(25px);
+            transform: translateY(25x);
+        }
+
+        100% {
+            -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+    }
+
+    /*SCROLLPIL SLUT ------------------------------------*/
+
+    /*SOME ----------------------------------------------*/
+    #insta-tablet {
+        display: block;
+    }
+
+    #some-billeder a {
+        width: 30%;
+    }
+
+    #some-tekst {
+        display: flex;
+    }
+
+    #some-tekst h3 {
+        width: 50%;
+        padding-bottom: 2em;
+    }
+
+    /*SOME SLUT------------------------------------------*/
+
+}
+
+@media only screen and (min-width:1024px) {
+
+    /*SCROLLPIL -----------------------------------------*/
+    @keyframes shake-vertical {
+
+        0% {
+            -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+        }
+
+        50% {
+            -webkit-transform: translateY(-45px);
+            transform: translateY(-45x);
+        }
+
+        100% {
+            -webkit-transform: translateY(-65px);
+            transform: translateY(-65px);
+        }
+    }
+
+
+    /*SCROLLPIL SLUT ------------------------------------*/
+    /*SOME ----------------------------------------------*/
+    #insta-laptop {
+        display: block;
+    }
+
+    #some-billeder a {
+        width: 20%;
+    }
+
+    /*SOME SLUT------------------------------------------*/
+}
+
+/* RESPONSIV SLUT ----------------------------------------------------------------------------*/

@@ -1,0 +1,308 @@
+/*OM CAFEEN ---------------------------------------------------------------------------------*/
+
+#omsejd-video {
+    text-align: center;
+}
+
+#omsejd-video video {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    z-index: 98;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#scrollpil {
+    padding: 3em 0em 3em 0em;
+}
+
+
+/*OM CAFEEN SLUT-----------------------------------------------------------------------------*/
+
+
+
+/*MEGET MERE SEJD ----------------------------------------------------------------------------*/
+#megetmere {
+    text-align: center;
+    padding-top: 2em;
+}
+
+#megetmere .overskrifterdouble {
+    height: 5em
+}
+
+#megetmere p {
+    text-align: left;
+    padding-top: 1em;
+
+}
+
+.illustrationer {
+    z-index: 96;
+    background-color: #2C3535;
+    width: 10em;
+    margin: 0 auto;
+    margin-bottom: -8em;
+    padding: 1em 3em 1em 3em;
+}
+
+.mere {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.mere-tekst {
+    background-color: #9CC6C9;
+    padding: 10em 1em 2em 1em;
+}
+
+/*MEGET MERE SEJD SLUT -----------------------------------------------------------------------*/
+
+
+
+
+/*PARTNERE -----------------------------------------------------------------------------------*/
+#partnere {
+    background-color: #f8f8f8;
+    text-align: center;
+    min-height: 80vh;
+}
+
+#partnere h2 {
+    padding-top: 2em;
+}
+
+#partnere h3 {
+    font-size: 1.5em;
+}
+
+#partnere p {
+    text-align: left;
+    padding-top: 1em;
+}
+
+.billeder {
+    z-index: 96;
+    margin: 0 auto;
+    margin-bottom: -8em;
+
+}
+
+.partnere {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.partnere-tekst {
+    background-color: white;
+    border: 5px solid #9CC6C9;
+    padding: 10em 1em 2em 1em;
+    height: 6em;
+    max-width: 20em;
+    margin: 0 auto;
+}
+
+
+/*modificeret fra w3schools*/
+.mySlides {
+    display: none
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+    padding: 0.2em;
+    transition: 0.6s ease;
+    margin-top: -14em;
+    z-index: 99;
+}
+
+/* Position the "buttons"*/
+.next {
+    float: right;
+}
+
+.prev {
+    float: left;
+}
+
+
+#menu-prikker {
+    width: 100vw;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0em 0.258em 0em 0.258em;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    height: 20px;
+    width: 20px;
+    border: none;
+    background: none;
+    background-image: url(images/overskrifter/rombe.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#partnere-desk {
+    display: none;
+}
+
+
+/*PARTNERE SLUT ------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:320px) {}
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {
+
+    /*MEGET MERE ------------------------------------------*/
+    #tablet {
+        max-width: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .mere {
+        width: 40%;
+    }
+
+    .illustrationer {
+        height: 20em;
+    }
+
+    .mere-tekst {
+        height: 250px;
+    }
+
+    /*PARTNERE -------------------------------------------*/
+    .prev {
+        display: none;
+    }
+
+    .next {
+        display: none;
+    }
+
+    #menu-prikker {
+        display: none;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+    #partnere-desk {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .partnere {
+        width: 25%;
+    }
+
+    .billeder {
+        width: 80%;
+        padding-left: 2.5em;
+    }
+
+    .partnere-tekst {
+        height: 100%;
+        max-width: none;
+        width: 100%;
+    }
+
+    h3 a {
+        font-size: 0.8em;
+    }
+
+}
+
+
+@media only screen and (min-width:1024px) {
+
+    /*MEGET MERE ------------------------------------------*/
+    .mere {
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 1em;
+        width: 45%;
+    }
+
+    .illustrationer {
+        width: 10em;
+        height: 5em;
+        margin-top: 6em;
+    }
+
+    .mere-tekst {
+        padding: 1em 1em 0em 6em;
+        margin-left: -5em;
+        height: 300px;
+
+    }
+
+    .mere .overskrifter {
+        max-width: 220px;
+    }
+
+    h3 a {
+        font-size: 1em;
+    }
+}
