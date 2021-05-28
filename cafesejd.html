@@ -10,25 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/alle.css">
     <link rel="stylesheet" href="css/cafesejd.css">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Kom og besøg den hyggelige Café Sejd i kongernes Jelling. Vi blander nordisk mytologi med den moderne stil. Så kom og hør vikingerne i midten af Kongernes Jelling.">
+    <meta name="keywords" content="café, Café Sejd, Kongernes Jelling, Jelling, viking, vikinger, nordisk mytologi, nodisk, asatro, mjød, mad, tapas, special øl, historie, hyggelig café, café Jelling">
 
     <meta name="author" content="DreamTeam">
 
-
-    <link rel="shortcut icon" href="css/images/rombe.png" />
-
+    <link rel="shortcut icon" href="css/images/ekstra/rombe-blaa.png" />
 
 </head>
 
 <body>
     <header>
+        <!-- KILDE LINES EKSAMEN VINTER 2020 -->
+        <div id=topmenu>
+            <a href="cafesejd.html"><img id="logo" src="css/images/ekstra/sejd-logo.png" alt="Café Sejd"></a>
 
-        <!-- Navigationsbar taget fra Line's eksamen vinter 2020 -->
-        <nav id="menubar">
-            <a href="cafesejd.html"><img src="css/images/illustrationer/sejd-logo.png" alt="Café Sejd"></a>
             <input type="checkbox" id="open-menu">
             <label for="open-menu" id="menuslide">
                 <span class="spinner top"></span>
@@ -43,22 +42,33 @@
                     <li><a href="kontakt.html">kontakt</a></li>
                 </ul>
             </div>
-        </nav>
 
+        </div>
+
+        <nav id=navigation-desktop>
+            <ul>
+                <li><a href="menukort.html">Menukort</a></li>
+                <li><a href="fortaellinger.html">Fortællinger</a></li>
+                <li><a href="omsejd.html">Om Sejd</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <article>
             <div id="forside-video">
-                <video autoplay loop muted playsinline>
-                    <source src="css/images/video/stemningmoerkere.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <section id="video">
+                    <video autoplay loop muted playsinline>
+                        <source src="css/images/ekstra/intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
 
-                <picture id="foreground">
-                    <source srcset="css/images/overskrifter/pilstor.png" media="(max-width: 1099px)" class="scrollpil">
-                    <source srcset="css/images/overskrifter/pilhvidstor.png" class="scrollpil">
-                    <img src="css/images/overskrifter/pilhvidstor.png" alt=">>" class="scrollpil">
+                <picture>
+                    <source srcset="css/images/ekstra/pilned.png" media="(max-width: 1024px)" class="scrollpil">
+                    <source srcset="css/images/ekstra/pilhvidstor.png" class="scrollpil">
+                    <img src="css/images/ekstra/pilhvidstor.png" alt=">>" class="scrollpil">
                 </picture>
             </div>
             <section id="omcafeen">
@@ -77,7 +87,7 @@
                     <div class="desktop-illustrationer illustrationright"> </div>
                 </section>
 
-                <img src="css/images/overskrifter/pilstor.png" alt="Scroll ned for at se mere" class="scrollpil omcafeen">
+                <img src="css/images/ekstra/pilned.png" alt="Scroll ned for at se mere" class="scrollpil omcafeen">
 
             </section>
 
@@ -118,7 +128,7 @@
                     <section class="semenu-tekst">
                         <img src="css/images/overskrifter/semenukort.png" alt="Se menukort" class="overskrifter">
                         <p class="teaser-tekst">Bestil et måltid og spis som de mægtige krigere fra det guddommelige Valhal.</p>
-                        <h3><a href="menukort.html" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se vores menu</a></h3>
+                        <h3><a href="menukort.html" class="link"><img src="css/images/ekstra/pilhoejrehvid.png" alt=">>" class="pil">Se vores menu</a></h3>
                     </section>
 
                 </section>
@@ -129,7 +139,7 @@
                         <img src="css/images/overskrifter/kaffe.png" alt="Se Kaffe" class="overskrifter">
                         <p class="teaser-tekst">På Café Sejd serveres altid guddommelig kaffe.
                             Espresso, Cafe latte, Cortado, Cappucino osv.</p>
-                        <h4><a href="menukort.html" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se vores kaffe</a></h4>
+                        <h4><a href="menukort.html" class="link"><img src="css/images/ekstra/pilhoejrehvid.png" alt=">>" class="pil">Se vores kaffe</a></h4>
                     </section>
 
                 </section>
@@ -137,19 +147,19 @@
                 <section id="seoel" class="se right">
                     <img src="css/images/billeder/lille_bajer.jpg" alt="Vikingernes vand" class="madbilleder">
                     <section class="semenu-tekst">
-                        <img src="css/images/overskrifter/oel.png" alt="Se øl" class="overskrifter">
+                        <img src="css/images/overskrifter/ol.png" alt="Se øl" class="overskrifter">
                         <p class="teaser-tekst">Drik som de ægte vikinger gjorde det.
                             Vi serverer både mjød, øl, vin og andre drinks på Sejd.</p>
-                        <h4><a href="menukort.html" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se vores øl</a></h4>
+                        <h4><a href="menukort.html" class="link"><img src="css/images/ekstra/pilhoejrehvid.png" alt=">>" class="pil">Se vores øl</a></h4>
                     </section>
                 </section>
 
                 <section id="setapas" class="se left">
                     <img src="css/images/billeder/lille_tapas.jpg" alt="Føde for kongerne" class="madbilleder">
                     <section class="semenu-tekst">
-                        <img src="css/images/overskrifter/tapas.png" alt="Se tapas" class="overskrifter" class="overskrifter">
+                        <img src="css/images/overskrifter/tapas.png" alt="Se tapas" class="overskrifter">
                         <p class="teaser-tekst">Vi serverer vores Viking Tapas i forskellige udgaver, alle er en konge værdig.</p>
-                        <h4><a href="menukort.html" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Se vores tapas</a></h4>
+                        <h4><a href="menukort.html" class="link"><img src="css/images/ekstra/pilhoejrehvid.png" alt=">>" class="pil">Se vores tapas</a></h4>
                     </section>
                 </section>
 
@@ -168,7 +178,7 @@
                         <p>Og i lang tid skete der ingenting, ude i det store ingenting, men pludselig fødes det første væsen ud af ingenting.</p>
                         <p>Det er Ymer og han er en jætte. Han er ond og han repræsenterer alt hvad der er ondt.... ”</p>
                     </section>
-                    <a href="fortaellinger.html" class="link"><img src="css/images/overskrifter/pilhoejrehvid.png" alt=">>" class="pil">Læs hele historien her</a>
+                    <a href="fortaellinger.html" class="link"><img src="css/images/ekstra/pilhoejrehvid.png" alt=">>" class="pil">Læs hele historien her</a>
                 </div>
             </section>
 
@@ -176,9 +186,9 @@
                 <h2>FØLG CAFÉ SEJD</h2>
 
                 <section id="some-tekst">
-                    <h3><a href="https://www.youtube.com/channel/UCloMQGHBrkutET1ygw6CALg/featured" class="link"><img src="css/images/illustrationer/youtube.png" alt=">>" class="pil">CAFÉ SEJD</a></h3>
+                    <h3><a href="https://www.youtube.com/channel/UCloMQGHBrkutET1ygw6CALg/featured" class="link"><img src="css/images/ekstra/some_youtube.png" alt=">>" class="pil">CAFÉ SEJD</a></h3>
 
-                    <h3><a href="https://www.instagram.com/cafesejd.jelling/" class="link"><img src="css/images/illustrationer/instagram.png" alt=">>" class="pil">@CAFÉSEJD_JELLING</a></h3>
+                    <h3><a href="https://www.instagram.com/cafesejd.jelling/" class="link"><img src="css/images/ekstra/some_instagram.png" alt=">>" class="pil">@CAFÉSEJD_JELLING</a></h3>
                 </section>
 
                 <section id="some-billeder">
@@ -192,17 +202,13 @@
             </section>
 
         </article>
-
-
     </main>
-
 
     <footer></footer>
 
 
+    <script src="javascript/alle.js"> </script>
 
-
-    <script src="javascript/cafesejdmobil.js"></script>
 </body>
 
 </html>

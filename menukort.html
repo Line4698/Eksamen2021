@@ -10,25 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/alle.css">
     <link rel="stylesheet" href="css/menukort.css">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Se hvad caféen tilbyder. Tilpas menueen efter dine behov. Det lækreste mad du kunne forstille dig. Få både kaffe, te, alkohol, sandwich, tapas og meget mere">
+    <meta name="keywords" content="Café Sejd, menukort, kaffe, kaffe med alkohol, te, chai, chai te, drikke med alkohol, drikke uden alkohol, saft, øl, gin, mjød, tapas, sandwich, suppe, dessert, kage, laktosefri, glutenfri, allergier, økologisk, vegansk, vegetarisk">
 
     <meta name="author" content="DreamTeam">
 
-
-    <link rel="shortcut icon" href="css/images/rombe.png" />
-
+    <link rel="shortcut icon" href="css/images/ekstra/rombe-blaa.png" />
 
 </head>
 
 <body>
     <header>
+        <!-- KILDE LINES EKSAMEN VINTER 2020 -->
+        <div id=topmenu>
+            <a href="cafesejd.html"><img id="logo" src="css/images/ekstra/sejd-logo.png" alt="Café Sejd"></a>
 
-        <!-- Navigationsbar taget fra Line's eksamen vinter 2020 -->
-        <nav id="menubar">
-            <a href="cafesejd.html"><img src="css/images/illustrationer/sejd-logo.png" alt="Café Sejd"></a>
             <input type="checkbox" id="open-menu">
             <label for="open-menu" id="menuslide">
                 <span class="spinner top"></span>
@@ -43,252 +42,1824 @@
                     <li><a href="kontakt.html">kontakt</a></li>
                 </ul>
             </div>
-        </nav>
 
+        </div>
+
+        <nav id=navigation-desktop>
+            <ul>
+                <li><a href="menukort.html">Menukort</a></li>
+                <li><a href="fortaellinger.html">Fortællinger</a></li>
+                <li><a href="omsejd.html">Om Sejd</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <article>
-            <section id="menukort">
-                <section id="drikkevarer">
-                    <h2><img src="css/images/overskrifter/drikkevarer.png" alt="Drikkevarer" class="overskrifter"></h2>
+        <article id="menukort-mobil">
 
-                    <section id="drikke-tekst">
+            <section id="drikkevare">
+                <h2>
+                    <img src="css/images/overskrifter/drikkevarer.png" alt="Drikkevarer" class="overskrifter">
+                </h2>
 
-                        <section class="knap-tablet">
+                <button class="accordion">
+                    Kaffe
+                </button>
 
-                            <button class="accordion mobil">Kaffe</button>
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_kaffe.jpg" alt="Lækkert billede af kaffe">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/kaffe.png" alt="Kaffe" class="overskrifter">
+                        </h3>
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Thor</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Hugin &amp; Munin</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Dobbelt espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Loke</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Cortado</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Odin</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Flat white</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Frigg</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Cappucino</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Freja</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Caffe latte</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Enkelt shot espresso</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Dobbelt shot espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Od</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Americano</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Skirner</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Choko Latte m. flødeskum</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Grid</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Iskaffe</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Enkelt shot espresso</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Dobbelt shot espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Vølven Vågner</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Special kaffe</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Angerboda</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Signaturkaffe m. chili</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Ratatosk</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Filterkaffe</p>
+                                </li>
+                                <li class="ekstra bund-varer">
+                                    <p>Opfyldning</p>
+                                </li>
+                            </ul>
 
-                            <button class="accordion tablet"><img src="css/images/overskrifter/kaffe.png" alt="Kaffe" class="overskrifter"><img src="css/images/billeder/lille_kaffe.jpg" alt="Billede af lækker kaffe" class="madbilleder"></button>
-
-                            <div class="panel">
-
-                                <section class="menu-indhold">
-                                    <img src="css/images/billeder/lille_kaffe.jpg" alt="kaffe" class="billeder">
-                                    <section class="panel-tekst">
-                                        <h3><img src="css/images/overskrifter/kaffe.png" alt="Kaffe" class="overskrifter"></h3>
-                                        <p>Thor Espresso</p>
-                                        <p class="pris">kr. 20,-</p>
-
-                                        <p>Hugin og munin Dobbelt espresso</p>
-                                        <p class="pris">kr. 28,-</p>
-
-                                        <p>Loke Cortado</p>
-                                        <p class="pris">kr. 35,-</p>
-
-                                        <p>Odin Flat white</p>
-                                        <p class="pris">kr. 40,-</p>
-
-                                        <p>Frig Cappucino</p>
-                                        <p class="pris">kr. 35,-</p>
-                                    </section>
-                                </section>
-                            </div>
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 20,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 28,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 25,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 50,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 25,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 10,-</p>
+                                </li>
+                            </ul>
 
                         </section>
+                    </section>
+                </div>
 
-                        <section class="knap-tablet left">
-                            <button class="accordion mobil">Kaffe m. spiritus</button>
+                <button class="accordion">
+                    Kaffe m. spiritus
+                </button>
 
-                            <button class="accordion tablet"><img src="css/images/overskrifter/kaffemspiritus.png" alt="Kaffe m. spiritus" class="overskrifter"><img src="css/images/billeder/lille_irish.jpg" alt="Billede af lækker Irish coffee" class="madbilleder"></button>
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_irish.jpg" alt="Lækkert billede af irish kaffe">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/kaffemspiritus.png" alt="Kaffe med spiritus" class="overskrifter">
+                        </h3>
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Skoll</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Carajillo - espresso m. spiritus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Vælg mellem Brandy, Anis, Kahlua eller rom</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Hate</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Irish Coffee</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Nidhug</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Jamaicansk Kaffe</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Freke</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Cafe Belmonte</p>
+                                </li>
+                            </ul>
 
-                            <div class="panel">
-                                <section class="menu-indhold">
-                                    <img src="css/images/billeder/lille_irish.jpg" alt="Irish Coffee" class="billeder">
-                                    <section class="panel-tekst">
-                                        <h3><img src="css/images/overskrifter/kaffemspiritus.png" alt="Kaffe M. Spiritus" class="overskrifter"></h3>
-                                        <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                        <p>Culinary Institute i Vejle</p>
-                                    </section>
-                                </section>
-                            </div>
-                        </section>
-
-
-
-                        <section class="knap-tablet">
-
-                            <button class="accordion mobil">Te</button>
-
-                            <button class="accordion tablet"><img src="css/images/overskrifter/te.png" alt="Te" class="overskrifter"><img src="css/images/billeder/lille_te.jpg" alt="Billede af lækker te" class="madbilleder"></button>
-
-                            <div class="panel">
-                                <section class="menu-indhold">
-                                    <img src="css/images/billeder/lille_te.jpg" alt="Te" class="billeder">
-                                    <section class="panel-tekst">
-                                        <h3><img src="css/images/overskrifter/te.png" alt="Te" class="overskrifter"></h3>
-                                        <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                        <p>Culinary Institute i Vejle</p>
-                                    </section>
-                                </section>
-                            </div>
-                        </section>
-
-
-                        <section class="knap-tablet left">
-                            <button class="accordion mobil">Chai</button>
-
-                            <button class="accordion tablet"><img src="css/images/overskrifter/chai.png" alt="Chai" class="overskrifter"><img src="css/images/billeder/lille_chai.jpg" alt="Billede af lækker chai" class="madbilleder"></button>
-
-                            <div class="panel">
-                                <section class="menu-indhold">
-                                    <img src="css/images/billeder/lille_chai.jpg" alt="Chai" class="billeder">
-                                    <section class="panel-tekst">
-                                        <h3><img src="css/images/overskrifter/chai.png" alt="Chai" class="overskrifter"></h3>
-                                        <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                        <p>Culinary Institute i Vejle</p>
-                                    </section>
-                                </section>
-                            </div>
-                        </section>
-
-
-                        <section class="knap-tablet">
-                            <button class="accordion mobil">Drikke u. alkohol</button>
-
-                            <button class="accordion tablet"><img src="css/images/overskrifter/drikkeualkohol.png" alt="Drikke uden alkohol" class="overskrifter"><img src="css/images/billeder/lille_saft.jpg" alt="Billede af lækker saft" class="madbilleder"></button>
-
-                            <div class="panel">
-                                <section class="menu-indhold">
-                                    <img src="css/images/billeder/lille_saft.jpg" alt="Saftevand" class="billeder">
-                                    <section class="panel-tekst">
-                                        <h3><img src="css/images/overskrifter/drikkeualkohol.png" alt="Drikke uden alkohol" class="overskrifter"></h3>
-                                        <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                        <p>Culinary Institute i Vejle</p>
-                                    </section>
-                                </section>
-                            </div>
-                        </section>
-
-
-                        <section class="knap-tablet left">
-                            <button class="accordion mobil menubund">Drikke m. alkohol</button>
-
-                            <button class="accordion tablet"><img src="css/images/overskrifter/drikkemalkohol.png" alt="Drikke med alkohol" class="overskrifter"><img src="css/images/billeder/lille_gin.jpg" alt="Billede af lækker gin" class="madbilleder"></button>
-
-                            <div class="panel">
-                                <section class="menu-indhold">
-                                    <img src="css/images/billeder/lille_gin.jpg" alt="Gin" class="billeder">
-                                    <section class="panel-tekst">
-                                        <h3><img src="css/images/overskrifter/drikkemalkohol.png" alt="Drikke med alkohol" class="overskrifter"></h3>
-                                        <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                        <p>Culinary Institute i Vejle</p>
-                                    </section>
-                                </section>
-                            </div>
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 50,-</p>
+                                </li>
+                            </ul>
 
                         </section>
-
                     </section>
-                </section>
+                </div>
 
-                <section id="mad">
-                    <h2><img src="css/images/overskrifter/mad.png" alt="Mad" class="overskrifter"></h2>
+                <button class="accordion">
+                    Te
+                </button>
 
-                    <section class="knap-tablet">
-                        <button class="accordion mobil">Tapas</button>
-
-                        <button class="accordion tablet"><img src="css/images/overskrifter/tapas.png" alt="Tapas" class="overskrifter"><img src="css/images/billeder/lille_tapas.jpg" alt="Billede af lækker tapas" class="madbilleder"></button>
-
-                        <div class="panel">
-                            <section class="menu-indhold">
-                                <img src="css/images/billeder/lille_tapas.jpg" alt="Tapas" class="billeder">
-                                <section class="panel-tekst">
-                                    <h3><img src="css/images/overskrifter/tapas.png" alt="Tapas" class="overskrifter"></h3>
-                                    <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                    <p>Culinary Institute i Vejle</p>
-                                </section>
-                            </section>
-                        </div>
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_te.jpg" alt="Lækkert billede af te">
                     </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/te.png" alt="Te" class="overskrifter">
+                        </h3>
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Sejd Te</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Café Sejds helt egen urtedrik</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Njord</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Klassisk 'Afternoon Tea'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Muspel</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Hot mint te</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Døndal</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Urtete med frugtsmag</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Nilflheim Mint</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Ice mint te</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Gefion</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Øko. grøn te med bla. lemongrass</p>
+                                </li>
+                            </ul>
 
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                            </ul>
 
-                    <section class="knap-tablet left">
-
-                        <button class="accordion mobil">Varme retter</button>
-
-                        <button class="accordion tablet"><img src="css/images/overskrifter/varmeretter.png" alt="Varme retter" class="overskrifter"><img src="css/images/billeder/lille_suppe.jpg" alt="Billede af lækker suppe" class="madbilleder"></button>
-
-                        <div class="panel">
-                            <section class="menu-indhold">
-                                <img src="css/images/billeder/lille_suppe.jpg" alt="Suppe" class="billeder">
-                                <section class="panel-tekst">
-                                    <h3><img src="css/images/overskrifter/varmeretter.png" alt="Varme retter" class="overskrifter"></h3>
-                                    <p></p>
-
-                                </section>
-                            </section>
-                        </div>
+                        </section>
                     </section>
+                </div>
 
-                    <section class="knap-tablet">
+                <button class="accordion">
+                    Chai
+                </button>
 
-                        <button class="accordion mobil">Kolde retter</button>
-
-                        <button class="accordion tablet"><img src="css/images/overskrifter/kolderetter.png" alt="Kolde retter" class="overskrifter"><img src="css/images/billeder/lille_sandwich.jpg" alt="Billede af lækker sandwich" class="madbilleder"></button>
-
-                        <div class="panel">
-                            <section class="menu-indhold">
-                                <img src="css/images/billeder/lille_sandwich.jpg" alt="Sandwich" class="billeder">
-                                <section class="panel-tekst">
-                                    <h3><img src="css/images/overskrifter/kolderetter.png" alt="Kolde retter" class="overskrifter"></h3>
-                                    <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                    <p>Culinary Institute i Vejle</p>
-                                </section>
-                            </section>
-                        </div>
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_chai.jpg" alt="Lækkert billede af chai">
                     </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/chai.png" alt="Chai" class="overskrifter">
+                        </h3>
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Hnoss</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Original Chai te, serveres som 'bryg-selv'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Sigyn</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Varm Chai-latte</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Gerd</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Is Chai-latte</p>
+                                </li>
+                            </ul>
 
-
-                    <section class="knap-tablet left">
-
-                        <button class="accordion mobil">Små retter</button>
-
-                        <button class="accordion tablet"><img src="css/images/overskrifter/smaaretter.png" alt="Små retter" class="overskrifter"><img src="css/images/billeder/lille_asparges.jpg" alt="Billede af lækre asparges" class="madbilleder"></button>
-
-                        <div class="panel">
-                            <section class="menu-indhold">
-                                <img src="css/images/billeder/lille_asparges.jpg" alt="Asperges" class="billeder">
-                                <section class="panel-tekst">
-                                    <h3><img src="css/images/overskrifter/smaaretter.png" alt="Små retter" class="overskrifter"></h3>
-                                    <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                    <p>Culinary Institute i Vejle</p>
-                                </section>
-                            </section>
-                        </div>
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                            </ul>
+                        </section>
                     </section>
+                </div>
 
-                    <section class="knap-tablet">
+                <button class="accordion">
+                    Drikke u. alkohol
+                </button>
 
-                        <button class="accordion mobil menubund">Desserter</button>
-
-                        <button class="accordion tablet"><img src="css/images/overskrifter/desserter.png" alt="Desserter" class="overskrifter"><img src="css/images/billeder/lille_dessert.jpg" alt="Billede af lækker dessert" class="madbilleder"></button>
-
-                        <div class="panel">
-                            <section class="menu-indhold">
-                                <img src="css/images/billeder/lille_dessert.jpg" alt="Dessert" class="billeder">
-                                <section class="panel-tekst">
-                                    <h3><img src="css/images/overskrifter/desserter.png" alt="Desserter" class="overskrifter"></h3>
-                                    <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
-                                    <p>Culinary Institute i Vejle</p>
-                                </section>
-                            </section>
-                        </div>
-
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_saft.jpg" alt="Lækkert billede af saft">
                     </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/drikkeualkohol.png" alt="Drikke uden alkohol" class="overskrifter">
+                        </h3>
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Røskva &amp; Tjalfe</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Varm chokolade</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Vár</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Varm økologisk saft</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hyldeblomst eller solbær</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Brage</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Blåbærmælk - 'Milkshake'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Ydun</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Frugtblend - 'Smoothie'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Naturfrisk</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Vælg mellem:</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hyldeblomst</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Havtorn/æble</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Æblemost (ufiltreret)</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Passion/orange</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Ginger beer</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Pink grape</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Appelsinbrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Cola classic</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hindbærbrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Apollinaris neutral</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Danskvand m. citrus/lime</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">San Pellegrino</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Vælg mellem:</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Limonata</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Aranciara Rosse</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Aqua tonica</p>
+                                </li>
+                                <li class="nyhed">
+                                    <p class="vigtig">Inari</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Hjemmefermenteret Kombucha - glas</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Øvrige</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                </li>
+                                <li class="ekstra nyhed">
+                                    <p>Alkoholfri øl</p>
+                                </li>
+                                <li class="ekstra nyhed">
+                                    <p>THY cola light</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Danskvand (0,5 l)</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Danskvand m. citrus (0,5 l)</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Isvand, glas</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Isvand, kande</p>
+                                </li>
+                                <li>
+                                    <p>Postevand uden is kan bestilles uden beregning</p>
+                                </li>
+                            </ul>
 
-                </section>
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 25,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 39,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 18,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 18,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 18,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 8,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 20,-</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </div>
+
+                <button class="accordion menubund">
+                    Drikke m. alkohol
+                </button>
+
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_gin.jpg" alt="Lækkert billede af gin">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/drikkemalkohol.png" alt="Drikke med alkohol" class="overskrifter">
+                        </h3>
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Jelling Bryghus</p>
+                                    <p>Håndbrygget øl</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Fadøl 0,4 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaskeøl 0,5 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Spørg personalet efter varianter</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Bøgedal Bryghus</p>
+                                    <p>Serveret:</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaskeøl 0,75 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaskeøl 0,375 l</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Mjølner</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Håndbrygget øl m. mjød</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Mjød</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Mjødladen krus, ca. 0,15 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Lokes Livseliksir krus, ca. 0,15 l</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Husets vin</p>
+                                    <p>Rød, rosé eller hvid</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaske 0,7 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Glas</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Serveres m. vand</p>
+                                </li>
+                                <li class="nyhed">
+                                    <p class="vigtig">Modavi</p>
+                                    <p>Dansk vin</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Fra fary lochan</p>
+                                    <p>Whisky-destilleri</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - efterår</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - vinter</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - forår</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - sommer</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Fary Bitter</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Fary Snaps - flere varianter</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Jordbærlikør</p>
+                                </li>
+
+                                <li>
+                                    <p class="vigtig">Spirit of Njord</p>
+                                    <p>Gin</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sand &amp; Sea</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>United Natures</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sun &amp; Citrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sloe Slow</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Mother Nature</p>
+                                </li>
+
+                                <li>
+                                    <p class="vigtig">Gin/Tonic</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sand &amp; Sea</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>United Natures</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sun &amp; Citrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sloe Slow</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Mother Nature</p>
+                                </li>
+
+                                <li>
+                                    <p class="vigtig">Øvrige</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Vejlerommen</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hedelærke - kaffelikør</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Highland Park - 'Einar'</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Ben Riach 10 years - røget</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Ben Riach Single Malt 10 years</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>1423 Ron Esclavo 15 års rom</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 62,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 145,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 59,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 50,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 65,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 179,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 49,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 30,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 30,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 70,-</p>
+                                </li>
+
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 90,-</p>
+                                </li>
+
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 65,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 65,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+
+                            </ul>
+                        </section>
+                    </section>
+                </div>
+
+            </section>
+
+            <section id="madvare">
+                <h2>
+                    <img src="css/images/overskrifter/mad.png" alt="Mad" class="overskrifter">
+                </h2>
+
+                <button class="accordion">
+                    Tapas
+                </button>
+
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_tapas.jpg" alt="Lækkert billede af Tapas">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/tapas.png" alt="Tapas" class="overskrifter">
+                        </h3>
+                        <img src="css/images/menukort/desk-tapas.png" alt="Tapas-menu" class="mobil-mad">
+                    </section>
+                </div>
+
+                <button class="accordion">
+                    Varme retter
+                </button>
+
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_suppe.jpg" alt="Lækkert billede af suppe">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/varmeretter.png" alt="Varme retter" class="overskrifter">
+                        </h3>
+                        <img src="css/images/menukort/desk-varme.png" alt="Tapas-menu" class="mobil-mad">
+                    </section>
+                </div>
+
+                <button class="accordion">
+                    Kolde retter
+                </button>
+
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_sandwich.jpg" alt="Lækkert billede af sandwich">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/kolderetter.png" alt="Kolde retter" class="overskrifter">
+                        </h3>
+                        <img src="css/images/menukort/desk-kolde.png" alt="Tapas-menu" class="mobil-mad">
+                    </section>
+                </div>
+
+                <button class="accordion">
+                    Små retter
+                </button>
+
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_asparges.jpg" alt="Lækkert billede af asparges">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/smaaretter.png" alt="Små retter" class="overskrifter">
+                        </h3>
+                        <img src="css/images/menukort/desk-smaa.png" alt="Tapas-menu" class="mobil-mad">
+                    </section>
+                </div>
+
+                <button class="accordion menubund">
+                    Desserter
+                </button>
+
+                <div class="panel">
+                    <section class="menu-indhold">
+                        <img src="css/images/billeder/lille_dessert.jpg" alt="Lækkert billede af dessert">
+                    </section>
+                    <section class="panel-tekst">
+                        <h3>
+                            <img src="css/images/overskrifter/desserter.png" alt="Dessert" class="overskrifter">
+                        </h3>
+                        <img src="css/images/menukort/desk-dessert.png" alt="Tapas-menu" class="mobil-mad">
+                    </section>
+                </div>
+
             </section>
 
         </article>
 
 
+        <article id="menukort-desktop">
+            <section id="drikkevare-desktop">
+                <h2>
+                    <img src="css/images/overskrifter/drikkevarer.png" alt="Drikkevarer" class="overskrifter">
+                </h2>
+
+                <section class="desktop-knap right">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/kaffe.png" alt="Kaffe" class="overskrifter"><img src="css/images/billeder/lille_kaffe.jpg" alt="Billede af lækker kaffe" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Thor</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Hugin &amp; Munin</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Dobbelt espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Loke</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Cortado</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Odin</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Flat white</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Frigg</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Cappucino</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Freja</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Caffe latte</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Enkelt shot espresso</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Dobbelt shot espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Od</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Americano</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Skirner</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Choko Latte m. flødeskum</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Grid</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Iskaffe</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Enkelt shot espresso</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Dobbelt shot espresso</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Vølven Vågner</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Special kaffe</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Angerboda</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Signaturkaffe m. chili</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Ratatosk</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Filterkaffe</p>
+                                </li>
+                                <li class="ekstra bund-varer">
+                                    <p>Opfyldning</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 20,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 28,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 25,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 50,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 25,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 10,-</p>
+                                </li>
+                            </ul>
+
+                        </section>
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap left">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/kaffemspiritus.png" alt="Kaffe med spiritus" class="overskrifter"><img src="css/images/billeder/lille_irish.jpg" alt="Billede af lækker irish coffee" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Skoll</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Carajillo - espresso m. spiritus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Vælg mellem Brandy, Anis, Kahlua eller rom</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Hate</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Irish Coffee</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Nidhug</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Jamaicansk Kaffe</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Freke</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Cafe Belmonte</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 40,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 50,-</p>
+                                </li>
+                            </ul>
+
+                        </section>
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap right">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/te.png" alt="Te" class="overskrifter"><img src="css/images/billeder/lille_te.jpg" alt="Billede af lækker te" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Sejd Te</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Café Sejds helt egen urtedrik</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Njord</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Klassisk 'Afternoon Tea'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Muspel</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Hot mint te</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Døndal</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Urtete med frugtsmag</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Nilflheim Mint</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Ice mint te</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Gefion</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Øko. grøn te med bla. lemongrass</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                            </ul>
+
+                        </section>
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap left">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/chai.png" alt="Chai" class="overskrifter"><img src="css/images/billeder/lille_chai.jpg" alt="Billede af lækker chai" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Hnoss</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Original Chai te, serveres som 'bryg-selv'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Sigyn</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Varm Chai-latte</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Gerd</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Is Chai-latte</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 35,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap right">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/drikkeualkohol.png" alt="Drikke uden alkohol" class="overskrifter"><img src="css/images/billeder/lille_saft.jpg" alt="Billede af lækker saft" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Røskva &amp; Tjalfe</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Varm chokolade</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Vár</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Varm økologisk saft</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hyldeblomst eller solbær</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Brage</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Blåbærmælk - 'Milkshake'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Ydun</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Frugtblend - 'Smoothie'</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Naturfrisk</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Vælg mellem:</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hyldeblomst</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Havtorn/æble</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Æblemost (ufiltreret)</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Passion/orange</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Ginger beer</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Pink grape</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Appelsinbrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Cola classic</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hindbærbrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Apollinaris neutral</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Danskvand m. citrus/lime</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">San Pellegrino</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Vælg mellem:</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Limonata</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Aranciara Rosse</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Aqua tonica</p>
+                                </li>
+                                <li class="nyhed">
+                                    <p class="vigtig">Inari</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Hjemmefermenteret Kombucha - glas</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Øvrige</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                </li>
+                                <li class="ekstra nyhed">
+                                    <p>Alkoholfri øl</p>
+                                </li>
+                                <li class="ekstra nyhed">
+                                    <p>THY cola light</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Danskvand (0,5 l)</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Danskvand m. citrus (0,5 l)</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Isvand, glas</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Isvand, kande</p>
+                                </li>
+                                <li>
+                                    <p>Postevand uden is kan bestilles uden beregning</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 38,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 25,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p>kr. 39,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 32,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 18,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 18,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 18,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 8,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 20,-</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap left">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/drikkemalkohol.png" alt="Drikke med alkohol" class="overskrifter"><img src="css/images/billeder/lille_bajer.jpg" alt="Billede af lækker øl" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <section class="varerliste">
+                            <ul class="navn">
+                                <li>
+                                    <p class="vigtig">Jelling Bryghus</p>
+                                    <p>Håndbrygget øl</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Fadøl 0,4 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaskeøl 0,5 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Spørg personalet efter varianter</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Bøgedal Bryghus</p>
+                                    <p>Serveret:</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaskeøl 0,75 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaskeøl 0,375 l</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Mjølner</p>
+                                    <img src="css/images/ekstra/rombe.png" alt=">>">
+                                    <p>Håndbrygget øl m. mjød</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Mjød</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Mjødladen krus, ca. 0,15 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Lokes Livseliksir krus, ca. 0,15 l</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Husets vin</p>
+                                    <p>Rød, rosé eller hvid</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Flaske 0,7 l</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Glas</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Serveres m. vand</p>
+                                </li>
+                                <li class="nyhed">
+                                    <p class="vigtig">Modavi</p>
+                                    <p>Dansk vin</p>
+                                </li>
+                                <li>
+                                    <p class="vigtig">Fra fary lochan</p>
+                                    <p>Whisky-destilleri</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - efterår</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - vinter</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - forår</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Whisky - sommer</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Fary Bitter</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Fary Snaps - flere varianter</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Jordbærlikør</p>
+                                </li>
+
+                                <li>
+                                    <p class="vigtig">Spirit of Njord</p>
+                                    <p>Gin</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sand &amp; Sea</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>United Natures</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sun &amp; Citrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sloe Slow</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Mother Nature</p>
+                                </li>
+
+                                <li>
+                                    <p class="vigtig">Gin/Tonic</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sand &amp; Sea</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>United Natures</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sun &amp; Citrus</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Sloe Slow</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Mother Nature</p>
+                                </li>
+
+                                <li>
+                                    <p class="vigtig">Øvrige</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Vejlerommen</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Hedelærke - kaffelikør</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Highland Park - 'Einar'</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Ben Riach 10 years - røget</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>Ben Riach Single Malt 10 years</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>1423 Ron Esclavo 15 års rom</p>
+                                </li>
+                            </ul>
+
+                            <ul class="pris">
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 62,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 145,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li>
+                                    <p>kr. 59,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 50,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 65,-</p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 179,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 49,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 60,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 30,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 30,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 75,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 70,-</p>
+                                </li>
+
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 95,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 90,-</p>
+                                </li>
+
+                                <li>
+                                    <p><br></p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 65,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 65,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 55,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+                                <li class="ekstra">
+                                    <p>kr. 45,-</p>
+                                </li>
+
+                            </ul>
+                        </section>
+                    </div>
+
+                </section>
+            </section>
+
+            <section id="mad-desktop">
+                <h2>
+                    <img src="css/images/overskrifter/mad.png" alt="Mad" class="overskrifter">
+                </h2>
+
+                <section class="desktop-knap right">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/tapas.png" alt="Tapas" class="overskrifter"><img src="css/images/billeder/lille_tapas.jpg" alt="Billede af lækker tapas" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <img src="css/images/menukort/desk-tapas.png" alt="Tapas-menu">
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap left">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/varmeretter.png" alt="Varme retter" class="overskrifter"><img src="css/images/billeder/lille_suppe.jpg" alt="Billede af lækker suppe" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <img src="css/images/menukort/desk-varme.png" alt="Tapas-menu">
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap right">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/kolderetter.png" alt="Kolde retter" class="overskrifter"><img src="css/images/billeder/lille_sandwich.jpg" alt="Billede af lækker sandwich" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <img src="css/images/menukort/desk-kolde.png" alt="Tapas-menu">
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap left">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/smaaretter.png" alt="Små retter" class="overskrifter"><img src="css/images/billeder/lille_asparges.jpg" alt="Billede af lækker asparges" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <img src="css/images/menukort/desk-smaa.png" alt="Tapas-menu">
+                    </div>
+
+                </section>
+
+                <section class="desktop-knap right">
+
+                    <button class="accordion tablet"><img src="css/images/overskrifter/desserter.png" alt="Desserter" class="overskrifter"><img src="css/images/billeder/lille_dessert.jpg" alt="Billede af lækker saft" class="madbilleder"></button>
+
+                    <div class="panel">
+                        <img src="css/images/menukort/desk-dessert.png" alt="Tapas-menu">
+                    </div>
+
+                </section>
+            </section>
+        </article>
+
     </main>
 
-
     <footer></footer>
-
-    <script src="javascript/menukort.js"></script>
+    <script src="javascript/alle.js"> </script>
+    <script src="javascript/menukort.js"> </script>
 
 </body>
 

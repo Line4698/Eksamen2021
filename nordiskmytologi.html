@@ -10,25 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/alle.css">
     <link rel="stylesheet" href="css/fortaellinger.css">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Læs den nordiske mytologis skabelsesmyte eller få den læst højt af Bjarne selv. Det er næsten som en tur ned på caféen. Læs og hør om jætter, guder, dværge og mennesker">
+    <meta name="keywords" content="Café Sejd, nordisk mytologi, mytologi, nordisk, skabelsen, skabelsesmyten, myten, historie, viking, vikinger, fortælling, fortællinger, jætter, guder, mennesker, dværge">
 
     <meta name="author" content="DreamTeam">
 
-
-    <link rel="shortcut icon" href="css/images/rombe.png" />
-
+    <link rel="shortcut icon" href="css/images/ekstra/rombe-blaa.png" />
 
 </head>
 
 <body>
     <header>
+        <!-- KILDE LINES EKSAMEN VINTER 2020 -->
+        <div id=topmenu>
+            <a href="cafesejd.html"><img id="logo" src="css/images/ekstra/sejd-logohvid.png" alt="Café Sejd"></a>
 
-        <!-- Navigationsbar taget fra Line's eksamen vinter 2020 -->
-        <nav id="menubar">
-            <a href="cafesejd.html"><img src="css/images/illustrationer/sejd-logohvid.png" alt="Café Sejd"></a>
             <input type="checkbox" id="open-menu">
             <label for="open-menu" id="menuslide">
                 <span class="spinner top"></span>
@@ -43,14 +42,23 @@
                     <li><a href="kontakt.html">kontakt</a></li>
                 </ul>
             </div>
-        </nav>
 
+        </div>
+
+        <nav id=navigation-desktop>
+            <ul>
+                <li><a href="menukort.html">Menukort</a></li>
+                <li><a href="fortaellinger.html">Fortællinger</a></li>
+                <li><a href="omsejd.html">Om Sejd</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <article>
             <section id="fortaellinger">
-                <h3><a href="xxx"><img src="css/images/overskrifter/sejdshistoriehvid.png" alt="Sejds historie" class="overskrifter"></a></h3>
+                <h3><a href="404.html"><img src="css/images/overskrifter/sejdshistoriehvid.png" alt="Sejds historie" class="overskrifter"></a></h3>
 
                 <h3 id="midt"><a href="nordiskmytologi.html"><img src="css/images/overskrifter/nordiskmytologi2hvid.png" alt="Nordisk mytologi" class="overskrifterdouble"></a></h3>
 
@@ -58,12 +66,14 @@
 
             </section>
 
-            <h3 id="pil"><img src="css/images/overskrifter/pilhvidstor.png" alt=">>" id="scrollpil"></h3>
+            <h3 id="pil"><img src="css/images/ekstra/pilhvidstor.png" alt=">>" class="scrollpil"></h3>
 
             <section id="skabelsen">
                 <img src="css/images/illustrationer/sejdtjalfe-hvid.png" alt="Illustration fra skabelsesmyten" class="illustration start">
 
-                <h2><img src="css/images/overskrifter/sejdshistoriehvid.png" alt="Skabelsen" class="overskrifter"></h2>
+                <h2 id="historie"><img src="css/images/overskrifter/skabelsen.png" alt="Skabelsen" class="overskrifter">
+                    <i class="historieplay" id="spil"><img src="css/images/ekstra/lyd.png" alt="Historien om Kong Harald " class="overskrifter megafon"></i>
+                </h2>
 
                 <section class="historie right">
                     <section class="tekst">
@@ -125,12 +135,10 @@
             </section>
 
         </article>
-
-
     </main>
 
-
-    <footer></footer>
+    <script src="javascript/alle.js"> </script>
+    <script src="javascript/nordiskmytologi.js"> </script>
 
 </body>
 

@@ -10,25 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/alle.css">
     <link rel="stylesheet" href="css/omsejd.css">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Her kan du læse meget mere om Café Sejd. Læs om hvad caféen ellers kan tilbyde af events, galleri, selskabslokaler og meget mere. Du kan også finde alle caféens samarbejdspartnere.">
+    <meta name="keywords" content="Café Sejd, samarbejdspartnere, samarbejde, partnere, café, boutique, galleri, selskabslokaler, catering, gourmet, gourmetaften">
 
     <meta name="author" content="DreamTeam">
 
-
-    <link rel="shortcut icon" href="css/images/rombe.png" />
-
+    <link rel="shortcut icon" href="css/images/ekstra/rombe-blaa.png" />
 
 </head>
 
 <body>
     <header>
+        <!-- KILDE LINES EKSAMEN VINTER 2020 -->
+        <div id=topmenu>
+            <a href="cafesejd.html"><img id="logo" src="css/images/ekstra/sejd-logo.png" alt="Café Sejd"></a>
 
-        <!-- Navigationsbar taget fra Line's eksamen vinter 2020 -->
-        <nav id="menubar">
-            <a href="cafesejd.html"><img src="css/images/illustrationer/sejd-logo.png" alt="Café Sejd"></a>
             <input type="checkbox" id="open-menu">
             <label for="open-menu" id="menuslide">
                 <span class="spinner top"></span>
@@ -43,116 +42,131 @@
                     <li><a href="kontakt.html">kontakt</a></li>
                 </ul>
             </div>
-        </nav>
 
+        </div>
+
+        <nav id=navigation-desktop>
+            <ul>
+                <li><a href="menukort.html">Menukort</a></li>
+                <li><a href="fortaellinger.html">Fortællinger</a></li>
+                <li><a href="omsejd.html">Om Sejd</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <article>
             <section id="omsejd-video">
+                <div id="video">
+                    <video loop muted autoplay controls>
+                        <source src="css/images/ekstra/omsejd.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
 
-                <video loop controls>
-                    <source src="css/images/video/omsejd.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    </video>
+                </div>
 
-                </video>
-
-                <img src="css/images/overskrifter/pilstor.png" alt="Scroll ned for at se mere" id="scrollpil">
+                <picture>
+                    <source srcset="css/images/ekstra/pilned.png" media="(max-width: 1024px)" class="scrollpil">
+                    <source srcset="css/images/ekstra/pilhvidstor.png" class="scrollpil">
+                    <img src="css/images/ekstra/pilhvidstor.png" alt=">>" class="scrollpil">
+                </picture>
             </section>
 
 
             <section id="megetmere">
                 <h2><img src="css/images/overskrifter/megetmeresejd.png" alt="Meget mere Sejd" class="overskrifter"></h2>
 
+                <div id="tablet">
 
-                <section id="boutique" class="mere">
+                    <section id="boutique" class="mere">
 
-                    <img src="css/images/illustrationer/sejdvalkyrie-hvid.png" alt="Sejd kvinder" class="illustrationer">
+                        <img src="css/images/illustrationer/sejdvalkyrie-hvid.png" alt="Sejd kvinder" class="illustrationer">
 
-                    <section class="mere-tekst">
-                        <h3><img src="css/images/overskrifter/boutique.png" alt=">>" class="overskrifter"></h3>
+                        <section class="mere-tekst">
+                            <h3><img src="css/images/overskrifter/boutique.png" alt=">>" class="overskrifter"></h3>
 
-                        <p>Hos Sejd elsker vi at støtte lokale virksomheder. Derfor har vi udvalgt særlige varer der bliver fremstillet i caféen og galleriet. </p>
+                            <p>Hos Sejd elsker vi at støtte lokale virksomheder. Derfor har vi udvalgt særlige varer der bliver fremstillet i caféen og galleriet. </p>
 
-                        <p>Nogle af dem bliver også serveret, så kom gerne forbi og bliv inspireret.</p>
+                            <p>Nogle af dem bliver også serveret, så kom gerne forbi og bliv inspireret.</p>
 
-                    </section>
-
-                </section>
-
-                <section id="galleriet" class="mere">
-
-                    <img src="css/images/illustrationer/sejdskib-hvid.png" alt="Viking skib" class="illustrationer">
-
-                    <section class="mere-tekst">
-                        <h3><img src="css/images/overskrifter/galleriet.png" alt=">>" class="overskrifter"></h3>
-
-                        <p>Galleriet er vores store selskabslokale. Her udstiller vi kunst fra faste og skiftende kunstnere.</p>
-
-                        <p>Som gæst har du mulighed for at se og købe nogle af de forskellige kunstværker.</p>
+                        </section>
 
                     </section>
 
-                </section>
+                    <section id="galleriet" class="mere">
 
-                <section id="gourmetaften" class="mere">
+                        <img src="css/images/illustrationer/sejdskib-hvid.png" alt="Viking skib" class="illustrationer">
 
-                    <img src="css/images/illustrationer/sejdtjalfe-hvid.png" alt="Sejd kvinder" class="illustrationer">
+                        <section class="mere-tekst">
+                            <h3><img src="css/images/overskrifter/galleriet.png" alt=">>" class="overskrifter"></h3>
 
-                    <section class="mere-tekst">
-                        <h3><img src="css/images/overskrifter/gourmetaften.png" alt=">>" class="overskrifter"></h3>
+                            <p>Galleriet er vores store selskabslokale. Her udstiller vi kunst fra faste og skiftende kunstnere.</p>
 
-                        <p>I løbet af vinterhalvåret holder vi specielle gourmetaftener. Her får 20 heldige gæster god mad, vin, hygge og spændende historier.</p>
+                            <p>Som gæst har du mulighed for at se og købe nogle af de forskellige kunstværker.</p>
 
-                        <p>Kom forbi caféen og bliv skrevet op til en anderledes gourmetaften.</p>
-
-                    </section>
-
-                </section>
-
-                <section id="selskaber" class="mere">
-
-                    <img src="css/images/illustrationer/sejdkvinde-hvid.png" alt="Sejd kvinder" class="illustrationer">
-
-                    <section class="mere-tekst">
-                        <h3><img src="css/images/overskrifter/selskaber.png" alt=">>" class="overskrifter"></h3>
-
-                        <p>Har du et arrangement, så har vi maden. Vi leverer mad til større og mindre forsamlinger.</p>
-
-                        <p>Der er også mulighed for at holde dit arrangement hos os, med op til 45 personer.</p>
+                        </section>
 
                     </section>
 
-                </section>
+                    <section id="gourmetaften" class="mere">
 
-                <section id="gastronomi" class="mere">
+                        <img src="css/images/illustrationer/sejdkvinde-hvid.png" alt="Sejd kvinder" class="illustrationer">
 
-                    <img src="css/images/illustrationer/sejdtjalfe-hvid.png" alt="Sejd kvinder" class="illustrationer">
+                        <section class="mere-tekst">
+                            <h3><img src="css/images/overskrifter/gourmetaften.png" alt=">>" class="overskrifter"></h3>
 
-                    <section class="mere-tekst">
-                        <h3><img src="css/images/overskrifter/mytologiskgastronomi.png" alt=">>" class="overskrifterdouble"></h3>
+                            <p>I løbet af vinterhalvåret holder vi specielle gourmetaftener. Her får 20 heldige gæster god mad, vin, hygge og spændende historier.</p>
 
-                        <p>At besøge os er en oplevelse. Vi blander det mytologiske og det moderne. På den måde skaber vi en helt ny form for gastronomi.</p>
+                            <p>Kom forbi caféen og bliv skrevet op til en anderledes gourmetaften.</p>
 
-                    </section>
-
-                </section>
-
-                <section id="events" class="mere">
-
-                    <img src="css/images/illustrationer/sejdvalkyrie-hvid.png" alt="Sejd kvinder" class="illustrationer">
-
-                    <section class="mere-tekst">
-                        <h3><img src="css/images/overskrifter/events.png" alt=">>" class="overskrifter"></h3>
-
-                        <p>Vi elsker underholdning. Derfor bliver der også løbende arrangeret forskellig spændende underholdning.</p>
-
-                        <p>Eksempelvis har vi aftaler med vores leverandører som kommer og fortæller om deres produkter</p>
+                        </section>
 
                     </section>
 
-                </section>
+                    <section id="selskaber" class="mere">
 
+                        <img src="css/images/illustrationer/sejdvalkyrie-hvid.png" alt="Sejd kvinder" class="illustrationer">
+
+                        <section class="mere-tekst">
+                            <h3><img src="css/images/overskrifter/selskaber.png" alt=">>" class="overskrifter"></h3>
+
+                            <p>Har du et arrangement, så har vi maden. Vi leverer mad til større og mindre forsamlinger.</p>
+
+                            <p>Der er også mulighed for at holde dit arrangement hos os, med op til 45 personer.</p>
+
+                        </section>
+
+                    </section>
+
+                    <section id="gastronomi" class="mere">
+
+                        <img src="css/images/illustrationer/sejdskib-hvid.png" alt="Sejd kvinder" class="illustrationer">
+
+                        <section class="mere-tekst">
+                            <h3><img src="css/images/overskrifter/mytologiskgastronomi.png" alt=">>" class="overskrifterdouble"></h3>
+
+                            <p>At besøge os er en oplevelse. Vi blander det mytologiske og det moderne. På den måde skaber vi en helt ny form for gastronomi.</p>
+
+                        </section>
+
+                    </section>
+
+                    <section id="events" class="mere">
+
+                        <img src="css/images/illustrationer/sejdkvinde-hvid.png" alt="Sejd kvinder" class="illustrationer">
+
+                        <section class="mere-tekst">
+                            <h3><img src="css/images/overskrifter/events.png" alt=">>" class="overskrifter"></h3>
+
+                            <p>Vi elsker underholdning. Derfor bliver der også løbende arrangeret forskellig spændende underholdning.</p>
+
+                            <p>Eksempelvis har vi aftaler med vores leverandører som kommer og fortæller om deres produkter</p>
+
+                        </section>
+
+                    </section>
+                </div>
 
             </section>
 
@@ -309,8 +323,8 @@
                     </section>
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)"><img src="css/images/overskrifter/pilvenstre.png" alt="<<"></a>
-                <a class="next" onclick="plusSlides(1)"><img src="css/images/overskrifter/pilhoejre.png" alt=">>"></a>
+                <a class="prev" onclick="plusSlides(-1)"><img src="css/images/ekstra/pilvenstre.png" alt="<<"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="css/images/ekstra/pilhoejre.png" alt=">>"></a>
 
                 <div id="menu-prikker">
                     <span class="dot" onclick="currentSlide(1)"></span>
@@ -331,42 +345,179 @@
                     <span class="dot" onclick="currentSlide(16)"></span>
                 </div>
 
+
+                <div id="partnere-desk">
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_culinary.jpg" alt="Culinary Institute" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://culinaryinstitute.dk/">Gastorudvikler</a></h3>
+                            <p>Holistisk sensorik, koncept- og måltidsudvikling</p>
+                            <p>Culinary Institute i Vejle</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_boegedal.jpg" alt="Bøgedals bryggerier" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.boegedal.com/">Bøgedal</a></h3>
+                            <p>Skandinaviens eneste fritfaldsbryggeri</p>
+                            <p>Mikrobryggeri i Vejle</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_elkaerholm.png" alt="Elkærholm aroniaplantage" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.elkaerholm.dk/">Elkærholm</a></h3>
+                            <p>Frisk og koldpresset saft</p>
+                            <p>Plantage, mosteri og gårdbutik ved Egtved</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_farylochan.jpg" alt="Fary Lochan whisky" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://farylochan.dk/">Dansk Whisky</a></h3>
+                            <p>Fary Lochan</p>
+                            <p>Whisky destilleri i Farre</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_fiskehus.jpg" alt="Havnens fiskehus" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.havnensfiskehus.dk/">Fiskehus</a></h3>
+                            <p>Frisk fisk, røget fisk og fiske-anretninger</p>
+                            <p>Havnens Fiskehus i Vejle</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_jellingbryghus.jpg" alt="Jellings bryghus" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://jellingguiden.dk/sites/erhvervsliv/andre-erhverv/jelling-bryghus-aps/">Bryghus</a></h3>
+                            <p>Lokale specialøl</p>
+                            <p>Jelling Bryghus</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_lokes.jpg" alt="Lokes livseleksir" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.facebook.com/Lokes-Livseliksir-642579442511726/">Mjød</a></h3>
+                            <p>Lokes livseleksir</p>
+                            <p>Lokalt mikrobryggeri</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_madvaerket.jpg" alt="Madværket" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://madvaerket.dk/">Madværket</a></h3>
+                            <p>Producent og gastronom</p>
+                            <p>Engros og selskaber i Vejle</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_natureteam.jpg" alt="Nature team" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://natureteam.dk/">Nature team</a></h3>
+                            <p>Wellness og velværsprodukter</p>
+                            <p>Webshop fra Randers</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_njord.jpg" alt="Njord" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://njordgin.com/">Njord</a></h3>
+                            <p>Tonic og gin</p>
+                            <p>Gin destilleri i Aarhus</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_noerresnede.jpg" alt="Nørre Snede" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.noerresnedekafferisteri.dk/">Kafferisteri</a></h3>
+                            <p>Kvalitets kafffe</p>
+                            <p>Kafferisteri I Nørre Snede</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_standpunkt.jpg" alt="Standpunkt" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.facebook.com/standpunktdesign/">Standpunkt</a></h3>
+                            <p>Legetøj i trædesign</p>
+                            <p>Standpunkt Design</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_sweetlily.jpg" alt="Sweet Lily" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://sweetlily.dk/">Sweet Lily</a></h3>
+                            <p>Cremer og sæbe</p>
+                            <p>Hudpleje I Lem Stationsby</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_vanilla.jpg" alt="Vanilla" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://vanillachokolade.dk/">Vanilla</a></h3>
+                            <p>Chokolader og kager</p>
+                            <p>Konditor i Vejle</p>
+                        </section>
+                    </section>
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_ged.jpg" alt="Ged og Grønt" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://www.ged-gront.dk/">Ged &amp; Grønt</a></h3>
+                            <p>Gårdmejeri og grønthandler</p>
+                            <p>Gårdmejeri i Sondrup</p>
+                        </section>
+                    </section>
+
+                    <section class="partnere">
+                        <img src="css/images/partnere/k_oemands.jpg" alt="Ømands" class="billeder">
+                        <section class="partnere-tekst">
+                            <h3><a href="https://oemands.dk/">Ømands</a></h3>
+                            <p>Gastro lounge og bacon røgeri</p>
+                            <p>Røgeri i Haderslev</p>
+                        </section>
+                    </section>
+                </div>
+
             </section>
-
-
-
-
 
             <section id="some">
                 <h2>FØLG CAFÉ SEJD</h2>
 
                 <section id="some-tekst">
-                    <h3><a href="https://www.youtube.com/channel/UCloMQGHBrkutET1ygw6CALg/featured" class="link"><img src="css/images/illustrationer/youtube.png" alt=">>" class="pil">CAFÉ SEJD</a></h3>
+                    <h3><a href="https://www.youtube.com/channel/UCloMQGHBrkutET1ygw6CALg/featured" class="link"><img src="css/images/ekstra/some_youtube.png" alt=">>" class="pil">CAFÉ SEJD</a></h3>
 
-                    <h3><a href="https://www.instagram.com/cafesejd.jelling/" class="link"><img src="css/images/illustrationer/instagram.png" alt=">>" class="pil">@CAFÉSEJD_JELLING</a></h3>
+                    <h3><a href="https://www.instagram.com/cafesejd.jelling/" class="link"><img src="css/images/ekstra/some_instagram.png" alt=">>" class="pil">@CAFÉSEJD_JELLING</a></h3>
                 </section>
 
                 <section id="some-billeder">
                     <a href="https://www.instagram.com/cafesejd.jelling/"><img src="css/images/billeder/insta_mor.jpg" alt="instagrambillede af Bjarne og sin mor"></a>
                     <a href="https://www.instagram.com/cafesejd.jelling/"><img src="css/images/billeder/insta_mad.jpg" alt="instagrambillede af lækker mad fra café sejd"></a>
+                    <a href="https://www.instagram.com/cafesejd.jelling/" id="insta-tablet"><img src="css/images/billeder/insta_bajer.jpg" alt="instagrambillede af lækker øl"></a>
+                    <a href="https://www.instagram.com/cafesejd.jelling/" id="insta-laptop"><img src="css/images/billeder/lille_dessert.jpg" alt="instagrambillede af lækker dessert"></a>
 
                 </section>
 
             </section>
-
-
         </article>
-
-
     </main>
 
+    <script src="javascript/alle.js"> </script>
+    <script src="javascript/omsejd.js"> </script>
 
-    <footer></footer>
-
-
-
-
-    <script src="javascript/omsejd.js"></script>
 </body>
 
 </html>

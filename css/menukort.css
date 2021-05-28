@@ -139,12 +139,12 @@ h2 {
     padding: 0.1em 0.5em 0em 0.5em;
 }
 
-.varerliste #navn {
+.varerliste .navn {
     float: left;
     padding-left: 2em;
 }
 
-#mad-desktop .varerliste #navn {
+#mad-desktop .varerliste .navn {
     max-width: 350px;
 }
 
@@ -152,7 +152,7 @@ h2 {
     max-width: 80vw;
 }
 
-.varerliste #pris {
+.varerliste .pris {
     float: right;
     padding-right: 2em;
 }
@@ -249,7 +249,7 @@ h2 {
         max-width: none;
     }
 
-    #mad-desktop .varerliste #navn {
+    #mad-desktop .varerliste .navn {
         max-width: 400px;
     }
 }
